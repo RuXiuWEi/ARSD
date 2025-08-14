@@ -13,31 +13,259 @@
     <!-- 引入Element Plus图标 -->
     <script src="https://unpkg.com/@element-plus/icons-vue"></script>
     <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
         body { 
             margin: 0; 
             padding: 0; 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
-            background: #f5f5f5; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; 
+            background: #e8e8e8; 
         }
-        .container { 
-            max-width: 1600px; 
-            margin: 0 auto; 
-            padding: 20px; 
+        
+        /* 整体容器 */
+        .app-container {
+            max-width: 90%;
+            margin: 0 auto;
+            background: #f0f2f5;
+            min-height: 100vh;
+            position: relative;
         }
-        .header { 
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-            color: white; 
-            padding: 30px; 
-            text-align: center; 
-            border-radius: 10px; 
-            margin-bottom: 30px; 
+        
+        /* 内容容器 */
+        .content-wrapper {
+            width: 100%;
+            background: #f0f2f5;
         }
+        
+        /* 顶部用户信息栏 */
+        .user-info-bar {
+            background: #f5f5f5;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            font-size: 13px;
+            color: #333;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        
+        .user-info-left {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+        
+        .user-info-right {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+        
+        .user-info-right .user-info-item:not(:last-child) {
+            margin-right: 15px;
+        }
+        
+        .user-info-item {
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 4px;
+            -webkit-transition: background-color 0.3s ease;
+            -moz-transition: background-color 0.3s ease;
+            -o-transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease;
+        }
+        
+        .user-info-item:hover {
+            background-color: rgba(0,0,0,0.05);
+        }
+        
+        /* 顶部全局导航栏背景容器 */
+        .nav-bg-container {
+            background: #1890ff;
+            width: 100%;
+            position: relative;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* 导航栏背景全屏扩展 */
+        .nav-bg-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -5.55%;
+            right: -5.55%;
+            bottom: 0;
+            background: #1890ff;
+            z-index: -1;
+        }
+        
+        /* 顶部全局导航栏内容 */
+        .top-nav {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .nav-left {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+        
+        .brand-logo {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 40px;
+        }
+        
+        .brand-logo img {
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+        
+        .main-nav {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+        
+        .main-nav a:not(:last-child) {
+            margin-right: 30px;
+        }
+        
+        .main-nav-item {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .main-nav-item:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+
+        
+        /* 主体布局 */
+        .main-layout {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            min-height: calc(100vh - 100px);
+            min-height: -webkit-calc(100vh - 100px);
+            min-height: -moz-calc(100vh - 100px);
+        }
+        
+        /* 左侧菜单 */
+        .sidebar {
+            width: 250px;
+            background: white;
+            border-right: 1px solid #e8e8e8;
+            overflow-y: auto;
+        }
+        
+        .menu-item {
+            padding: 12px 20px;
+            cursor: pointer;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .menu-item.level1 {
+            background: #fafafa;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .menu-item.level2 {
+            padding-left: 35px;
+            color: #666;
+        }
+        
+        .menu-item.level3 {
+            padding-left: 50px;
+            color: #888;
+        }
+       
+
+        .menu-item.active {
+            background: #333;
+            color: white;
+        }
+        
+        .menu-item.collapsed {
+            color: #999;
+        }
+        
+        .menu-expand-icon {
+            float: right;
+            margin-top: 2px;
+        }
+        
+        /* 主内容区域 */
+        .main-content {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            padding: 20px;
+            background: #f0f2f5;
+        }
+        
+        .breadcrumb {
+            background: white;
+            padding: 12px 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        }
+        
         .filter-section, .logs-section { 
             background: white; 
-            border-radius: 10px; 
-            padding: 25px; 
-            margin-bottom: 30px; 
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+            border-radius: 6px; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1); 
         }
         .filter-grid { 
             display: grid; 
@@ -103,11 +331,77 @@
 </head>
 <body>
     <div id="app">
-        <div class="container">
-            <div class="header">
-                <h1>品牌商后台基础_操作日志管理</h1>
-                <p>基于ARSD模板生成的演示</p>
+        <div class="app-container">
+            <!-- 顶部用户信息栏 -->
+            <div class="user-info-bar">
+                <div class="user-info-left">
+                    <span class="user-info-item">您好，khcgb2023 ▼</span>
+                </div>
+                <div class="user-info-right">
+                    <span class="user-info-item">商户中心 ▼</span>
+                    <span class="user-info-item">系统设置 ▼</span>
+                    <span class="user-info-item">网站导航 ▼</span>
+                    <span class="user-info-item">📧</span>
+                </div>
             </div>
+            
+            <!-- 顶部全局导航栏 -->
+            <div class="nav-bg-container">
+                <div class="top-nav">
+                    <div class="nav-left">
+                        <div class="brand-logo">
+                            <img src="https://stati.weixin12315.com/houtai/images/denglu/logoImg.png" alt="米多大数据引擎">
+                            米多大数据引擎
+                        </div>
+                        <nav class="main-nav">
+                            <a href="#" class="main-nav-item">首页</a>
+                            <a href="#" class="main-nav-item">产品库</a>
+                            <a href="#" class="main-nav-item">客户</a>
+                            <a href="#" class="main-nav-item">资产</a>
+                            <a href="#" class="main-nav-item">公众号</a>
+                            <a href="#" class="main-nav-item">订单</a>
+                            <a href="#" class="main-nav-item">应用服务 ▼</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-wrapper">
+        
+        <!-- 主体布局 -->
+        <div class="main-layout">
+            <!-- 左侧菜单导航 -->
+            <div class="sidebar">
+                <div class="menu-item level1">
+                    <i class="el-icon-setting"></i> 系统配置
+                </div>
+                <div class="menu-item level2">
+                    <i class="el-icon-key"></i> 权限/日志
+                </div>
+                <div class="menu-item level3">账号管理</div>
+                <div class="menu-item level3 active">操作日志</div>
+                
+                <div class="menu-item level1 collapsed">
+                    <i class="el-icon-setting"></i> 通用设置
+                    <span class="menu-expand-icon">+</span>
+                </div>
+                
+                <div class="menu-item level1 collapsed">
+                    <i class="el-icon-key"></i> 服务授权
+                    <span class="menu-expand-icon">+</span>
+                </div>
+            </div>
+            
+            <!-- 主内容区域 -->
+            <div class="main-content">
+                <!-- 面包屑导航 -->
+                <div class="breadcrumb">
+                    <el-breadcrumb separator=">">
+                        <el-breadcrumb-item>系统管理</el-breadcrumb-item>
+                        <el-breadcrumb-item>权限/日志</el-breadcrumb-item>
+                        <el-breadcrumb-item>操作日志</el-breadcrumb-item>
+                    </el-breadcrumb>
+                </div>
 
             <div class="filter-section">
                 <h3>筛选条件</h3>
@@ -125,10 +419,18 @@
                         </el-date-picker>
                     </el-form-item>
                     
+                    <el-form-item label="操作账号">
+                        <el-input
+                            v-model="filters.operatorAccount"
+                            placeholder="输入操作账号"
+                            clearable>
+                        </el-input>
+                    </el-form-item>
+                    
                     <el-form-item label="操作人">
                         <el-input
                             v-model="filters.operator"
-                            placeholder="输入操作人姓名或账号"
+                            placeholder="输入操作人姓名"
                             clearable>
                         </el-input>
                     </el-form-item>
@@ -220,6 +522,7 @@
                     border
                     max-height="600">
                     <el-table-column prop="time" label="操作时间" sortable width="180"></el-table-column>
+                    <el-table-column prop="operatorAccount" label="操作账号" width="120"></el-table-column>
                     <el-table-column prop="operator" label="操作人" width="120">
                         <template #default="scope">
                             <span v-html="highlightSearch(scope.row.operator)"></span>
@@ -271,7 +574,9 @@
                         @current-change="handleCurrentChange">
                     </el-pagination>
                 </div>
-            </div>
+                </div>
+        </div>
+        </div>
         </div>
 
         <!-- 操作详情抽屉 -->
@@ -290,6 +595,10 @@
                     <div class="detail-item">
                         <span class="detail-label">操作时间:</span>
                         <span class="detail-value">{{ currentLog.time }}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">操作账号:</span>
+                        <span class="detail-value">{{ currentLog.operatorAccount }}</span>
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">操作人:</span>
@@ -458,6 +767,7 @@
                     {
                         id: "275256",
                         time: "2024-01-05 14:30:25",
+                        operatorAccount: "abcde1234",
                         operator: "张三",
                         operatorIP: "192.168.1.100",
                         logLevel: "系统级",
@@ -479,6 +789,7 @@
                     {
                         id: "277649",
                         time: "2024-01-05 15:20:10",
+                        operatorAccount: "fghij5678",
                         operator: "李四",
                         operatorIP: "192.168.1.101",
                         logLevel: "系统级",
@@ -498,6 +809,7 @@
                     {
                         id: "277650",
                         time: "2024-01-05 16:15:30",
+                        operatorAccount: "abcde1234",
                         operator: "张三",
                         operatorIP: "192.168.1.100",
                         logLevel: "系统级",
@@ -520,6 +832,7 @@
                     {
                         id: "277651",
                         time: "2024-01-05 17:00:45",
+                        operatorAccount: "klmno9012",
                         operator: "王五",
                         operatorIP: "192.168.1.102",
                         logLevel: "系统级",
@@ -537,6 +850,7 @@
                     {
                         id: "277652",
                         time: "2024-01-05 18:30:20",
+                        operatorAccount: "pqrst3456",
                         operator: "赵六",
                         operatorIP: "192.168.1.103",
                         logLevel: "系统级",
@@ -553,6 +867,7 @@
                     {
                         id: "277653",
                         time: "2024-01-05 19:15:10",
+                        operatorAccount: "abcde1234",
                         operator: "张三",
                         operatorIP: "192.168.1.100",
                         logLevel: "系统级",
@@ -568,6 +883,7 @@
                     {
                         id: "277654",
                         time: "2024-01-05 20:00:00",
+                        operatorAccount: "fghij5678",
                         operator: "李四",
                         operatorIP: "192.168.1.101",
                         logLevel: "系统级",
@@ -585,6 +901,7 @@
                     {
                         id: "277655",
                         time: "2024-01-06 09:00:00",
+                        operatorAccount: "klmno9012",
                         operator: "王五",
                         operatorIP: "192.168.1.102",
                         logLevel: "系统级",
@@ -602,6 +919,7 @@
                     {
                         id: "277656",
                         time: "2024-01-06 10:30:00",
+                        operatorAccount: "pqrst3456",
                         operator: "赵六",
                         operatorIP: "192.168.1.103",
                         logLevel: "系统级",
@@ -620,6 +938,7 @@
                     {
                         id: "277657",
                         time: "2024-01-06 11:15:00",
+                        operatorAccount: "abcde1234",
                         operator: "张三",
                         operatorIP: "192.168.1.100",
                         logLevel: "系统级",
@@ -638,6 +957,7 @@
                     {
                         id: "277658",
                         time: "2024-01-06 14:20:00",
+                        operatorAccount: "fghij5678",
                         operator: "李四",
                         operatorIP: "192.168.1.101",
                         logLevel: "系统级",
@@ -660,6 +980,7 @@
                     {
                         id: "277659",
                         time: "2024-01-06 15:45:00",
+                        operatorAccount: "klmno9012",
                         operator: "王五",
                         operatorIP: "192.168.1.102",
                         logLevel: "系统级",
@@ -680,6 +1001,7 @@
                     {
                         id: "277660",
                         time: "2024-01-06 16:30:00",
+                        operatorAccount: "pqrst3456",
                         operator: "赵六",
                         operatorIP: "192.168.1.103",
                         logLevel: "系统级",
@@ -699,6 +1021,7 @@
                     {
                         id: "277661",
                         time: "2024-01-06 17:15:00",
+                        operatorAccount: "abcde1234",
                         operator: "张三",
                         operatorIP: "192.168.1.100",
                         logLevel: "系统级",
@@ -721,6 +1044,7 @@
                     {
                         id: "277662",
                         time: "2024-01-06 18:00:00",
+                        operatorAccount: "fghij5678",
                         operator: "李四",
                         operatorIP: "192.168.1.101",
                         logLevel: "系统级",
@@ -739,6 +1063,7 @@
                     {
                         id: "277663",
                         time: "2024-01-07 09:30:00",
+                        operatorAccount: "klmno9012",
                         operator: "王五",
                         operatorIP: "192.168.1.102",
                         logLevel: "系统级",
@@ -757,6 +1082,7 @@
                     {
                         id: "277664",
                         time: "2024-01-07 10:15:00",
+                        operatorAccount: "pqrst3456",
                         operator: "赵六",
                         operatorIP: "192.168.1.103",
                         logLevel: "系统级",
@@ -778,6 +1104,7 @@
 
                 const filters = ref({
                     dateRange: [],
+                    operatorAccount: '',
                     operator: '',
                     operatorIP: '',
                     logLevel: '',
@@ -842,6 +1169,7 @@
                             (!filters.value.dateRange || filters.value.dateRange.length === 0 || 
                              (logDate >= new Date(filters.value.dateRange[0]) && 
                               logDate <= new Date(filters.value.dateRange[1]))) &&
+                            (!filters.value.operatorAccount || log.operatorAccount.includes(filters.value.operatorAccount)) &&
                             (!filters.value.operator || log.operator.includes(filters.value.operator)) &&
                             (!filters.value.operatorIP || log.operatorIP.includes(filters.value.operatorIP)) &&
                             (!filters.value.logLevel || log.logLevel === filters.value.logLevel) &&
@@ -857,6 +1185,7 @@
                 const resetFilters = () => {
                     filters.value = {
                         dateRange: [],
+                        operatorAccount: '',
                         operator: '',
                         operatorIP: '',
                         logLevel: '',
@@ -922,6 +1251,25 @@
                     return {};
                 };
 
+                // 生成操作账号（前5位小写字母+后4位数字）
+                const generateOperatorAccount = () => {
+                    const letters = 'abcdefghijklmnopqrstuvwxyz';
+                    const numbers = '0123456789';
+                    let account = '';
+                    
+                    // 生成前5位小写字母
+                    for (let i = 0; i < 5; i++) {
+                        account += letters[Math.floor(Math.random() * letters.length)];
+                    }
+                    
+                    // 生成后4位数字
+                    for (let i = 0; i < 4; i++) {
+                        account += numbers[Math.floor(Math.random() * numbers.length)];
+                    }
+                    
+                    return account;
+                };
+
                 onMounted(() => {
                     // 设置默认时间范围
                     filters.value.dateRange = ['2024-01-01', '2024-01-07'];
@@ -950,6 +1298,7 @@
                     highlightSearch,
                     getFieldLabel,
                     getDeletedInfo,
+                    generateOperatorAccount,
                     Search,
                     Refresh
                 };
