@@ -23,7 +23,9 @@
             margin: 0; 
             padding: 0; 
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; 
-            background: #e8e8e8; 
+            background: #e8e8e8;
+            font-size: 14px;
+            line-height: 1.5;
         }
         
         /* 整体容器 */
@@ -33,6 +35,8 @@
             background: #f0f2f5;
             min-height: 100vh;
             position: relative;
+            font-size: 14px;
+            line-height: 1.5;
         }
         
         /* 内容容器 */
@@ -146,7 +150,7 @@
             -ms-flex-align: center;
             align-items: center;
             color: white;
-            font-size: 18px;
+            font-size: 19px;
             font-weight: bold;
             margin-right: 40px;
         }
@@ -177,11 +181,15 @@
             text-decoration: none;
             padding: 8px 12px;
             border-radius: 4px;
-            transition: background-color 0.3s;
+            font-size: 15px;
+            -webkit-transition: background-color 0.3s ease;
+            -moz-transition: background-color 0.3s ease;
+            -o-transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease;
         }
         
         .main-nav-item:hover {
-            background-color: rgba(255,255,255,0.1);
+            background-color: #0d7cdd;
         }
         
 
@@ -206,25 +214,30 @@
         }
         
         .menu-item {
-            padding: 12px 20px;
+            padding: 10px 16px;
             cursor: pointer;
             border-bottom: 1px solid #f0f0f0;
+            font-size: 14px;
+            line-height: 1.5;
         }
         
         .menu-item.level1 {
             background: #fafafa;
-            font-weight: bold;
+            font-weight: 600;
             color: #333;
+            font-size: 14px;
         }
         
         .menu-item.level2 {
-            padding-left: 35px;
+            padding-left: 32px;
             color: #666;
+            font-size: 14px;
         }
         
         .menu-item.level3 {
-            padding-left: 50px;
+            padding-left: 48px;
             color: #888;
+            font-size: 14px;
         }
        
 
@@ -248,44 +261,56 @@
             -webkit-flex: 1;
             -ms-flex: 1;
             flex: 1;
-            padding: 20px;
+            padding: 16px;
             background: #f0f2f5;
         }
         
         .breadcrumb {
             background: white;
-            padding: 12px 20px;
-            margin-bottom: 20px;
+            padding: 10px 16px;
+            margin-bottom: 16px;
             border-radius: 6px;
             box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            font-size: 14px;
         }
         
         .filter-section, .logs-section { 
             background: white; 
             border-radius: 6px; 
-            padding: 20px; 
-            margin-bottom: 20px; 
+            padding: 16px; 
+            margin-bottom: 16px; 
             box-shadow: 0 1px 4px rgba(0,0,0,0.1); 
         }
         .filter-grid { 
             display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-            gap: 20px; 
-            margin-bottom: 20px; 
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+            gap: 16px; 
+            margin-bottom: 16px; 
         }
         .btn-group { 
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
             display: flex; 
-            gap: 10px; 
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
             justify-content: center; 
+        }
+        
+        .btn-group .el-button:not(:last-child) {
+            margin-right: 10px;
         }
         .detail-section { 
             margin-bottom: 25px; 
         }
         .detail-section h4 { 
             color: #667eea; 
-            margin-bottom: 15px; 
+            margin-bottom: 12px; 
             border-bottom: 1px solid #eee; 
-            padding-bottom: 8px; 
+            padding-bottom: 6px; 
+            font-size: 16px;
+            font-weight: 600;
         }
         .detail-item { 
             display: flex; 
@@ -326,6 +351,34 @@
         .log-level-app { 
             color: #409eff; 
             font-weight: bold; 
+        }
+        
+        /* Element Plus 组件样式调整 */
+        .el-form-item {
+            margin-bottom: 0;
+        }
+        
+        .el-form-item__label {
+            font-size: 14px !important;
+            line-height: 1.5 !important;
+            color: #333 !important;
+        }
+        
+        .el-input__inner, .el-select__inner {
+            font-size: 14px !important;
+        }
+        
+        .el-table {
+            font-size: 14px !important;
+        }
+        
+        .el-table th {
+            font-size: 14px !important;
+            font-weight: 600 !important;
+        }
+        
+        .el-button {
+            font-size: 14px !important;
         }
     </style>
 </head>
@@ -404,7 +457,7 @@
                 </div>
 
             <div class="filter-section">
-                <h3>筛选条件</h3>
+                <h4 style="margin: 0 0 12px 0; font-size: 16px; font-weight: 600; color: #333;">筛选条件</h4>
                 <div class="filter-grid">
                     <el-form-item label="操作时间范围">
                         <el-date-picker
@@ -513,7 +566,7 @@
             </div>
 
             <div class="logs-section">
-                <h3>操作日志列表</h3>
+                <h4 style="margin: 0 0 12px 0; font-size: 16px; font-weight: 600; color: #333;">操作日志列表</h4>
                 <el-table
                     :data="displayedLogs"
                     style="width: 100%"
