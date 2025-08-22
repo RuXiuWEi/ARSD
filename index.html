@@ -1,4 +1,6 @@
-<html lang="zh-CN"><head>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>品牌商后台基础-操作日志管理</title>
@@ -596,7 +598,1004 @@
     </style>
 </head>
 <body>
-    <div id="app" data-v-app=""><div class="app-container"><!-- 顶部用户信息栏 --><div class="user-info-bar"><div class="user-info-left"><span class="user-info-item">您好，khcgb2023 ▼</span></div><div class="user-info-right"><span class="user-info-item">商户中心 ▼</span><span class="user-info-item">系统设置 ▼</span><span class="user-info-item">网站导航 ▼</span><span class="user-info-item">📧</span></div></div><!-- 顶部全局导航栏 --><div class="nav-bg-container"><div class="top-nav"><div class="nav-left"><div class="brand-logo"><img src="https://stati.weixin12315.com/houtai/images/denglu/logoImg.png" alt="米多大数据引擎"> 米多大数据引擎 </div><nav class="main-nav"><a href="#" class="main-nav-item">首页</a><a href="#" class="main-nav-item">产品库</a><a href="#" class="main-nav-item">客户</a><a href="#" class="main-nav-item">资产</a><a href="#" class="main-nav-item">公众号</a><a href="#" class="main-nav-item">订单</a><a href="#" class="main-nav-item">应用服务 ▼</a></nav></div></div></div><div class="content-wrapper"><!-- 主体布局 --><div class="main-layout"><!-- 左侧菜单导航 --><div class="sidebar"><div class="menu-item level1"><i class="el-icon-setting"></i> 系统配置 </div><div class="menu-item level2"><i class="el-icon-key"></i> 权限/日志 </div><div class="menu-item level3">账号管理</div><div class="menu-item level3 active">操作日志</div><div class="menu-item level1 collapsed"><i class="el-icon-setting"></i> 通用设置 <span class="menu-expand-icon">+</span></div><div class="menu-item level1 collapsed"><i class="el-icon-key"></i> 服务授权 <span class="menu-expand-icon">+</span></div></div><!-- 主内容区域 --><div class="main-content"><!-- 面包屑导航 --><div class="breadcrumb"><div class="el-breadcrumb" aria-label="Breadcrumb" role="navigation"><span class="el-breadcrumb__item"><span class="el-breadcrumb__inner" role="link">系统设置</span><span class="el-breadcrumb__separator" role="presentation">&gt;</span></span><span class="el-breadcrumb__item"><span class="el-breadcrumb__inner" role="link">权限/日志</span><span class="el-breadcrumb__separator" role="presentation">&gt;</span></span><span class="el-breadcrumb__item" aria-current="page"><span class="el-breadcrumb__inner" role="link">操作日志</span><span class="el-breadcrumb__separator" role="presentation">&gt;</span></span></div></div><div class="filter-section"><h4 style="margin: 0px 0px 12px; font-size: 16px; font-weight: 600; color: rgb(51, 51, 51);">筛选条件</h4><div class="filter-grid"><div class="el-form-item asterisk-left" role="group" aria-labelledby="el-id-600-0"><div id="el-id-600-0" class="el-form-item__label">操作时间范围</div><div class="el-form-item__content"><div class="el-date-editor el-date-editor--daterange el-input__wrapper el-range-editor el-tooltip__trigger el-tooltip__trigger" tabindex="-1"><i class="el-icon el-input__icon el-range__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="M128 384v512h768V192H768v32a32 32 0 1 1-64 0v-32H320v32a32 32 0 0 1-64 0v-32H128v128h768v64zm192-256h384V96a32 32 0 1 1 64 0v32h160a32 32 0 0 1 32 32v768a32 32 0 0 1-32 32H96a32 32 0 0 1-32-32V160a32 32 0 0 1 32-32h160V96a32 32 0 0 1 64 0zm-32 384h64a32 32 0 0 1 0 64h-64a32 32 0 0 1 0-64m0 192h64a32 32 0 1 1 0 64h-64a32 32 0 1 1 0-64m192-192h64a32 32 0 0 1 0 64h-64a32 32 0 0 1 0-64m0 192h64a32 32 0 1 1 0 64h-64a32 32 0 1 1 0-64m192-192h64a32 32 0 1 1 0 64h-64a32 32 0 1 1 0-64m0 192h64a32 32 0 1 1 0 64h-64a32 32 0 1 1 0-64"></path></svg></i><input tabindex="0" autocomplete="off" role="combobox" aria-controls="el-id-600-1" aria-expanded="false" aria-haspopup="dialog" placeholder="开始日期" class="el-range-input" value="2024-01-01"><span class="el-range-separator">至</span><input tabindex="0" autocomplete="off" role="combobox" aria-controls="el-id-600-1" aria-expanded="false" aria-haspopup="dialog" placeholder="结束日期" class="el-range-input" value="2024-01-07"><i class="el-icon el-input__icon el-range__close-icon el-range__close-icon--hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="m466.752 512-90.496-90.496a32 32 0 0 1 45.248-45.248L512 466.752l90.496-90.496a32 32 0 1 1 45.248 45.248L557.248 512l90.496 90.496a32 32 0 1 1-45.248 45.248L512 557.248l-90.496 90.496a32 32 0 0 1-45.248-45.248z"></path><path fill="currentColor" d="M512 896a384 384 0 1 0 0-768 384 384 0 0 0 0 768m0 64a448 448 0 1 1 0-896 448 448 0 0 1 0 896"></path></svg></i></div><!--teleport start--><!--teleport end--></div></div><div class="el-form-item asterisk-left"><label id="el-id-600-2" for="el-id-600-38" class="el-form-item__label">操作账号</label><div class="el-form-item__content"><div class="el-input el-input--suffix"><!-- input --><!-- prepend slot --><!--v-if--><div class="el-input__wrapper" tabindex="-1"><!-- prefix slot --><!--v-if--><input class="el-input__inner" type="text" autocomplete="off" tabindex="0" placeholder="输入操作账号" id="el-id-600-38"><!-- suffix slot --><!--v-if--></div><!-- append slot --><!--v-if--></div></div></div><div class="el-form-item asterisk-left"><label id="el-id-600-3" for="el-id-600-39" class="el-form-item__label">操作人</label><div class="el-form-item__content"><div class="el-input el-input--suffix"><!-- input --><!-- prepend slot --><!--v-if--><div class="el-input__wrapper" tabindex="-1"><!-- prefix slot --><!--v-if--><input class="el-input__inner" type="text" autocomplete="off" tabindex="0" placeholder="输入操作人姓名" id="el-id-600-39"><!-- suffix slot --><!--v-if--></div><!-- append slot --><!--v-if--></div></div></div><div class="el-form-item asterisk-left"><label id="el-id-600-4" for="el-id-600-40" class="el-form-item__label">操作人IP</label><div class="el-form-item__content"><div class="el-input el-input--suffix"><!-- input --><!-- prepend slot --><!--v-if--><div class="el-input__wrapper" tabindex="-1"><!-- prefix slot --><!--v-if--><input class="el-input__inner" type="text" autocomplete="off" tabindex="0" placeholder="输入IP地址" id="el-id-600-40"><!-- suffix slot --><!--v-if--></div><!-- append slot --><!--v-if--></div></div></div><div class="el-form-item asterisk-left"><label id="el-id-600-5" for="el-id-600-41" class="el-form-item__label">日志层级</label><div class="el-form-item__content"><div class="el-select"><div class="el-select__wrapper el-tooltip__trigger el-tooltip__trigger" tabindex="-1"><!--v-if--><div class="el-select__selection"><!--v-if--><div class="el-select__selected-item el-select__input-wrapper is-hidden"><input type="text" class="el-select__input" autocomplete="off" tabindex="0" role="combobox" readonly="" spellcheck="false" aria-activedescendant="" aria-controls="el-id-600-6" aria-expanded="false" aria-autocomplete="none" aria-haspopup="listbox" id="el-id-600-41" style="min-width: 11px;"><!--v-if--></div><div class="el-select__selected-item el-select__placeholder is-transparent"><span>选择日志层级</span></div></div><div class="el-select__suffix"><i class="el-icon el-select__caret el-select__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="M831.872 340.864 512 652.672 192.128 340.864a30.592 30.592 0 0 0-42.752 0 29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728 30.592 30.592 0 0 0-42.752 0z"></path></svg></i><!--v-if--><!--v-if--></div></div><!--teleport start--><!--teleport end--></div></div></div><div class="el-form-item asterisk-left"><label id="el-id-600-11" for="el-id-600-42" class="el-form-item__label">所属应用</label><div class="el-form-item__content"><div class="el-select"><div class="el-select__wrapper el-tooltip__trigger el-tooltip__trigger" tabindex="-1"><!--v-if--><div class="el-select__selection"><!--v-if--><div class="el-select__selected-item el-select__input-wrapper is-hidden"><input type="text" class="el-select__input" autocomplete="off" tabindex="0" role="combobox" readonly="" spellcheck="false" aria-activedescendant="" aria-controls="el-id-600-12" aria-expanded="false" aria-autocomplete="none" aria-haspopup="listbox" id="el-id-600-42" style="min-width: 11px;"><!--v-if--></div><div class="el-select__selected-item el-select__placeholder is-transparent"><span>选择所属应用</span></div></div><div class="el-select__suffix"><i class="el-icon el-select__caret el-select__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="M831.872 340.864 512 652.672 192.128 340.864a30.592 30.592 0 0 0-42.752 0 29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728 30.592 30.592 0 0 0-42.752 0z"></path></svg></i><!--v-if--><!--v-if--></div></div><!--teleport start--><!--teleport end--></div></div></div><div class="el-form-item asterisk-left"><label id="el-id-600-18" for="el-id-600-43" class="el-form-item__label">操作模块</label><div class="el-form-item__content"><div class="el-select"><div class="el-select__wrapper el-tooltip__trigger el-tooltip__trigger" tabindex="-1"><!--v-if--><div class="el-select__selection"><!--v-if--><div class="el-select__selected-item el-select__input-wrapper is-hidden"><input type="text" class="el-select__input" autocomplete="off" tabindex="0" role="combobox" readonly="" spellcheck="false" aria-activedescendant="" aria-controls="el-id-600-19" aria-expanded="false" aria-autocomplete="none" aria-haspopup="listbox" id="el-id-600-43" style="min-width: 11px;"><!--v-if--></div><div class="el-select__selected-item el-select__placeholder is-transparent"><span>选择操作模块</span></div></div><div class="el-select__suffix"><i class="el-icon el-select__caret el-select__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="M831.872 340.864 512 652.672 192.128 340.864a30.592 30.592 0 0 0-42.752 0 29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728 30.592 30.592 0 0 0-42.752 0z"></path></svg></i><!--v-if--><!--v-if--></div></div><!--teleport start--><!--teleport end--></div></div></div><div class="el-form-item asterisk-left"><label id="el-id-600-22" for="el-id-600-44" class="el-form-item__label">操作项</label><div class="el-form-item__content"><div class="el-input el-input--suffix"><!-- input --><!-- prepend slot --><!--v-if--><div class="el-input__wrapper" tabindex="-1"><!-- prefix slot --><!--v-if--><input class="el-input__inner" type="text" autocomplete="off" tabindex="0" placeholder="输入操作项关键词" id="el-id-600-44"><!-- suffix slot --><!--v-if--></div><!-- append slot --><!--v-if--></div></div></div><div class="el-form-item asterisk-left"><label id="el-id-600-23" for="el-id-600-45" class="el-form-item__label">操作详情</label><div class="el-form-item__content"><div class="el-input el-input--suffix"><!-- input --><!-- prepend slot --><!--v-if--><div class="el-input__wrapper" tabindex="-1"><!-- prefix slot --><!--v-if--><input class="el-input__inner" type="text" autocomplete="off" tabindex="0" placeholder="输入操作详情关键词" id="el-id-600-45"><!-- suffix slot --><!--v-if--></div><!-- append slot --><!--v-if--></div></div></div><div class="el-form-item asterisk-left"><label id="el-id-600-24" for="el-id-600-46" class="el-form-item__label">执行结果</label><div class="el-form-item__content"><div class="el-select"><div class="el-select__wrapper el-tooltip__trigger el-tooltip__trigger" tabindex="-1"><!--v-if--><div class="el-select__selection"><!--v-if--><div class="el-select__selected-item el-select__input-wrapper is-hidden"><input type="text" class="el-select__input" autocomplete="off" tabindex="0" role="combobox" readonly="" spellcheck="false" aria-activedescendant="" aria-controls="el-id-600-25" aria-expanded="false" aria-autocomplete="none" aria-haspopup="listbox" id="el-id-600-46" style="min-width: 11px;"><!--v-if--></div><div class="el-select__selected-item el-select__placeholder is-transparent"><span>选择执行结果</span></div></div><div class="el-select__suffix"><i class="el-icon el-select__caret el-select__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="M831.872 340.864 512 652.672 192.128 340.864a30.592 30.592 0 0 0-42.752 0 29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728 30.592 30.592 0 0 0-42.752 0z"></path></svg></i><!--v-if--><!--v-if--></div></div><!--teleport start--><!--teleport end--></div></div></div></div><div class="btn-group"><button aria-disabled="false" type="button" class="el-button el-button--primary"><i class="el-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="m795.904 750.72 124.992 124.928a32 32 0 0 1-45.248 45.248L750.656 795.904a416 416 0 1 1 45.248-45.248zM480 832a352 352 0 1 0 0-704 352 352 0 0 0 0 704"></path></svg></i><span class="">搜索</span></button><button aria-disabled="false" type="button" class="el-button"><i class="el-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="M771.776 794.88A384 384 0 0 1 128 512h64a320 320 0 0 0 555.712 216.448H654.72a32 32 0 1 1 0-64h149.056a32 32 0 0 1 32 32v148.928a32 32 0 1 1-64 0v-50.56zM276.288 295.616h92.992a32 32 0 0 1 0 64H220.16a32 32 0 0 1-32-32V178.56a32 32 0 0 1 64 0v50.56A384 384 0 0 1 896.128 512h-64a320 320 0 0 0-555.776-216.384z"></path></svg></i><span class="">重置</span></button></div></div><div class="logs-section"><h4 style="margin: 0px 0px 12px; font-size: 16px; font-weight: 600; color: rgb(51, 51, 51);">操作日志列表</h4><div class="table-container" style="overflow-x: auto;"><div class="el-table--fit el-table--striped el-table--border el-table--fluid-height el-table--scrollable-x el-table--scrollable-y el-table--enable-row-transition el-table el-table--layout-fixed is-scrolling-left" data-prefix="el" style="width: 100%; max-height: 600px;"><div class="el-table__inner-wrapper"><div class="hidden-columns"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="el-table__header-wrapper"><table class="el-table__header" border="0" cellpadding="0" cellspacing="0" style="width: 1500px;"><colgroup><col name="el-table_1_column_1" width="180"><col name="el-table_1_column_2" width="120"><col name="el-table_1_column_3" width="120"><col name="el-table_1_column_4" width="130"><col name="el-table_1_column_5" width="100"><col name="el-table_1_column_6" width="150"><col name="el-table_1_column_7" width="150"><col name="el-table_1_column_8" width="200"><col name="el-table_1_column_9" width="150"><col name="el-table_1_column_10" width="100"><col name="el-table_1_column_11" width="100"></colgroup><thead class=""><tr class=""><th class="el-table_1_column_1 descending is-leaf is-sortable el-table__cell" colspan="1" rowspan="1"><div class="cell">操作时间<span class="caret-wrapper"><i class="sort-caret ascending"></i><i class="sort-caret descending"></i></span><!----></div></th><th class="el-table_1_column_2 is-leaf el-table__cell" colspan="1" rowspan="1"><div class="cell">操作账号<!----><!----></div></th><th class="el-table_1_column_3 is-leaf el-table__cell" colspan="1" rowspan="1"><div class="cell">操作人<!----><!----></div></th><th class="el-table_1_column_4 is-leaf el-table__cell" colspan="1" rowspan="1"><div class="cell">操作人IP<!----><!----></div></th><th class="el-table_1_column_5 is-leaf el-table__cell" colspan="1" rowspan="1"><div class="cell">日志层级<!----><!----></div></th><th class="el-table_1_column_6 is-leaf el-table__cell" colspan="1" rowspan="1"><div class="cell">所属应用<!----><!----></div></th><th class="el-table_1_column_7 is-leaf el-table__cell" colspan="1" rowspan="1"><div class="cell">操作模块<!----><!----></div></th><th class="el-table_1_column_8 is-leaf el-table__cell" colspan="1" rowspan="1"><div class="cell">具体路径<!----><!----></div></th><th class="el-table_1_column_9 is-leaf el-table__cell" colspan="1" rowspan="1"><div class="cell">操作项<!----><!----></div></th><th class="el-table_1_column_10 is-leaf el-table__cell" colspan="1" rowspan="1"><div class="cell">执行状态<!----><!----></div></th><th class="el-table_1_column_11 el-table-fixed-column--right is-first-column is-leaf el-table__cell" colspan="1" rowspan="1" style="right: 0px;"><div class="cell">操作<!----><!----></div></th></tr></thead></table></div><div class="el-table__body-wrapper"><div class="el-scrollbar"><div class="el-scrollbar__wrap el-scrollbar__wrap--hidden-default" style="max-height: 560px;"><div class="el-scrollbar__view" style="display: inline-block; vertical-align: middle;"><table class="el-table__body" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed; width: 1500px;"><colgroup><col name="el-table_1_column_1" width="180"><col name="el-table_1_column_2" width="120"><col name="el-table_1_column_3" width="120"><col name="el-table_1_column_4" width="130"><col name="el-table_1_column_5" width="100"><col name="el-table_1_column_6" width="150"><col name="el-table_1_column_7" width="150"><col name="el-table_1_column_8" width="200"><col name="el-table_1_column_9" width="150"><col name="el-table_1_column_10" width="100"><col name="el-table_1_column_11" width="100"></colgroup><!--v-if--><tbody tabindex="-1"><tr class="el-table__row"><td colspan="1" rowspan="1" class="el-table_1_column_1 el-table__cell"><div class="cell"><!---->2024-01-07 10:15:00</div></td><td colspan="1" rowspan="1" class="el-table_1_column_2 el-table__cell"><div class="cell"><!---->pqrst3456</div></td><td colspan="1" rowspan="1" class="el-table_1_column_3 el-table__cell"><div class="cell"><!----><span>赵六</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_4 el-table__cell"><div class="cell"><!---->192.168.1.103</div></td><td colspan="1" rowspan="1" class="el-table_1_column_5 el-table__cell"><div class="cell"><!----><span class="log-level-system">系统级</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_6 el-table__cell"><div class="cell"><!---->品牌商后台基础</div></td><td colspan="1" rowspan="1" class="el-table_1_column_7 el-table__cell"><div class="cell"><!---->产品库</div></td><td colspan="1" rowspan="1" class="el-table_1_column_8 el-table__cell"><div class="cell"><!---->产品库-礼品库-分组管理</div></td><td colspan="1" rowspan="1" class="el-table_1_column_9 el-table__cell"><div class="cell"><!----><span>删除分组</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_10 el-table__cell"><div class="cell"><!----><span class="el-tag el-tag--success el-tag--light"><span class="el-tag__content">成功</span><!--v-if--></span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_11 el-table-fixed-column--right is-first-column el-table__cell" style="right: 0px;"><div class="cell"><!----><button aria-disabled="false" type="button" class="el-button el-button--primary el-button--small"><!--v-if--><span class=""> 详情 </span></button></div></td></tr><tr class="el-table__row el-table__row--striped"><td colspan="1" rowspan="1" class="el-table_1_column_1 el-table__cell"><div class="cell"><!---->2024-01-07 09:30:00</div></td><td colspan="1" rowspan="1" class="el-table_1_column_2 el-table__cell"><div class="cell"><!---->klmno9012</div></td><td colspan="1" rowspan="1" class="el-table_1_column_3 el-table__cell"><div class="cell"><!----><span>王五</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_4 el-table__cell"><div class="cell"><!---->192.168.1.102</div></td><td colspan="1" rowspan="1" class="el-table_1_column_5 el-table__cell"><div class="cell"><!----><span class="log-level-system">系统级</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_6 el-table__cell"><div class="cell"><!---->品牌商后台基础</div></td><td colspan="1" rowspan="1" class="el-table_1_column_7 el-table__cell"><div class="cell"><!---->产品库</div></td><td colspan="1" rowspan="1" class="el-table_1_column_8 el-table__cell"><div class="cell"><!---->产品库-礼品库-分组管理</div></td><td colspan="1" rowspan="1" class="el-table_1_column_9 el-table__cell"><div class="cell"><!----><span>编辑分组</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_10 el-table__cell"><div class="cell"><!----><span class="el-tag el-tag--success el-tag--light"><span class="el-tag__content">成功</span><!--v-if--></span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_11 el-table-fixed-column--right is-first-column el-table__cell" style="right: 0px;"><div class="cell"><!----><button aria-disabled="false" type="button" class="el-button el-button--primary el-button--small"><!--v-if--><span class=""> 详情 </span></button></div></td></tr><tr class="el-table__row"><td colspan="1" rowspan="1" class="el-table_1_column_1 el-table__cell"><div class="cell"><!---->2024-01-06 18:00:00</div></td><td colspan="1" rowspan="1" class="el-table_1_column_2 el-table__cell"><div class="cell"><!---->fghij5678</div></td><td colspan="1" rowspan="1" class="el-table_1_column_3 el-table__cell"><div class="cell"><!----><span>李四</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_4 el-table__cell"><div class="cell"><!---->192.168.1.101</div></td><td colspan="1" rowspan="1" class="el-table_1_column_5 el-table__cell"><div class="cell"><!----><span class="log-level-system">系统级</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_6 el-table__cell"><div class="cell"><!---->品牌商后台基础</div></td><td colspan="1" rowspan="1" class="el-table_1_column_7 el-table__cell"><div class="cell"><!---->产品库</div></td><td colspan="1" rowspan="1" class="el-table_1_column_8 el-table__cell"><div class="cell"><!---->产品库-礼品库-自有礼品</div></td><td colspan="1" rowspan="1" class="el-table_1_column_9 el-table__cell"><div class="cell"><!----><span>导出礼品</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_10 el-table__cell"><div class="cell"><!----><span class="el-tag el-tag--success el-tag--light"><span class="el-tag__content">成功</span><!--v-if--></span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_11 el-table-fixed-column--right is-first-column el-table__cell" style="right: 0px;"><div class="cell"><!----><button aria-disabled="false" type="button" class="el-button el-button--primary el-button--small"><!--v-if--><span class=""> 详情 </span></button></div></td></tr><tr class="el-table__row el-table__row--striped"><td colspan="1" rowspan="1" class="el-table_1_column_1 el-table__cell"><div class="cell"><!---->2024-01-06 17:15:00</div></td><td colspan="1" rowspan="1" class="el-table_1_column_2 el-table__cell"><div class="cell"><!---->abcde1234</div></td><td colspan="1" rowspan="1" class="el-table_1_column_3 el-table__cell"><div class="cell"><!----><span>张三</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_4 el-table__cell"><div class="cell"><!---->192.168.1.100</div></td><td colspan="1" rowspan="1" class="el-table_1_column_5 el-table__cell"><div class="cell"><!----><span class="log-level-system">系统级</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_6 el-table__cell"><div class="cell"><!---->品牌商后台基础</div></td><td colspan="1" rowspan="1" class="el-table_1_column_7 el-table__cell"><div class="cell"><!---->产品库</div></td><td colspan="1" rowspan="1" class="el-table_1_column_8 el-table__cell"><div class="cell"><!---->产品库-礼品库-自有礼品</div></td><td colspan="1" rowspan="1" class="el-table_1_column_9 el-table__cell"><div class="cell"><!----><span>删除礼品</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_10 el-table__cell"><div class="cell"><!----><span class="el-tag el-tag--success el-tag--light"><span class="el-tag__content">成功</span><!--v-if--></span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_11 el-table-fixed-column--right is-first-column el-table__cell" style="right: 0px;"><div class="cell"><!----><button aria-disabled="false" type="button" class="el-button el-button--primary el-button--small"><!--v-if--><span class=""> 详情 </span></button></div></td></tr><tr class="el-table__row"><td colspan="1" rowspan="1" class="el-table_1_column_1 el-table__cell"><div class="cell"><!---->2024-01-06 16:30:00</div></td><td colspan="1" rowspan="1" class="el-table_1_column_2 el-table__cell"><div class="cell"><!---->pqrst3456</div></td><td colspan="1" rowspan="1" class="el-table_1_column_3 el-table__cell"><div class="cell"><!----><span>赵六</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_4 el-table__cell"><div class="cell"><!---->192.168.1.103</div></td><td colspan="1" rowspan="1" class="el-table_1_column_5 el-table__cell"><div class="cell"><!----><span class="log-level-system">系统级</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_6 el-table__cell"><div class="cell"><!---->品牌商后台基础</div></td><td colspan="1" rowspan="1" class="el-table_1_column_7 el-table__cell"><div class="cell"><!---->产品库</div></td><td colspan="1" rowspan="1" class="el-table_1_column_8 el-table__cell"><div class="cell"><!---->产品库-礼品库-自有礼品</div></td><td colspan="1" rowspan="1" class="el-table_1_column_9 el-table__cell"><div class="cell"><!----><span>编辑礼品</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_10 el-table__cell"><div class="cell"><!----><span class="el-tag el-tag--success el-tag--light"><span class="el-tag__content">成功</span><!--v-if--></span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_11 el-table-fixed-column--right is-first-column el-table__cell" style="right: 0px;"><div class="cell"><!----><button aria-disabled="false" type="button" class="el-button el-button--primary el-button--small"><!--v-if--><span class=""> 详情 </span></button></div></td></tr><tr class="el-table__row el-table__row--striped"><td colspan="1" rowspan="1" class="el-table_1_column_1 el-table__cell"><div class="cell"><!---->2024-01-06 15:45:00</div></td><td colspan="1" rowspan="1" class="el-table_1_column_2 el-table__cell"><div class="cell"><!---->klmno9012</div></td><td colspan="1" rowspan="1" class="el-table_1_column_3 el-table__cell"><div class="cell"><!----><span>王五</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_4 el-table__cell"><div class="cell"><!---->192.168.1.102</div></td><td colspan="1" rowspan="1" class="el-table_1_column_5 el-table__cell"><div class="cell"><!----><span class="log-level-system">系统级</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_6 el-table__cell"><div class="cell"><!---->品牌商后台基础</div></td><td colspan="1" rowspan="1" class="el-table_1_column_7 el-table__cell"><div class="cell"><!---->产品库</div></td><td colspan="1" rowspan="1" class="el-table_1_column_8 el-table__cell"><div class="cell"><!---->产品库-礼品库-自有礼品</div></td><td colspan="1" rowspan="1" class="el-table_1_column_9 el-table__cell"><div class="cell"><!----><span>上传礼品</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_10 el-table__cell"><div class="cell"><!----><span class="el-tag el-tag--success el-tag--light"><span class="el-tag__content">成功</span><!--v-if--></span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_11 el-table-fixed-column--right is-first-column el-table__cell" style="right: 0px;"><div class="cell"><!----><button aria-disabled="false" type="button" class="el-button el-button--primary el-button--small"><!--v-if--><span class=""> 详情 </span></button></div></td></tr><tr class="el-table__row"><td colspan="1" rowspan="1" class="el-table_1_column_1 el-table__cell"><div class="cell"><!---->2024-01-06 14:20:00</div></td><td colspan="1" rowspan="1" class="el-table_1_column_2 el-table__cell"><div class="cell"><!---->fghij5678</div></td><td colspan="1" rowspan="1" class="el-table_1_column_3 el-table__cell"><div class="cell"><!----><span>李四</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_4 el-table__cell"><div class="cell"><!---->192.168.1.101</div></td><td colspan="1" rowspan="1" class="el-table_1_column_5 el-table__cell"><div class="cell"><!----><span class="log-level-system">系统级</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_6 el-table__cell"><div class="cell"><!---->品牌商后台基础</div></td><td colspan="1" rowspan="1" class="el-table_1_column_7 el-table__cell"><div class="cell"><!---->产品库</div></td><td colspan="1" rowspan="1" class="el-table_1_column_8 el-table__cell"><div class="cell"><!---->产品库-产品库-产品分类</div></td><td colspan="1" rowspan="1" class="el-table_1_column_9 el-table__cell"><div class="cell"><!----><span>删除分类</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_10 el-table__cell"><div class="cell"><!----><span class="el-tag el-tag--success el-tag--light"><span class="el-tag__content">成功</span><!--v-if--></span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_11 el-table-fixed-column--right is-first-column el-table__cell" style="right: 0px;"><div class="cell"><!----><button aria-disabled="false" type="button" class="el-button el-button--primary el-button--small"><!--v-if--><span class=""> 详情 </span></button></div></td></tr><tr class="el-table__row el-table__row--striped"><td colspan="1" rowspan="1" class="el-table_1_column_1 el-table__cell"><div class="cell"><!---->2024-01-06 11:15:00</div></td><td colspan="1" rowspan="1" class="el-table_1_column_2 el-table__cell"><div class="cell"><!---->abcde1234</div></td><td colspan="1" rowspan="1" class="el-table_1_column_3 el-table__cell"><div class="cell"><!----><span>张三</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_4 el-table__cell"><div class="cell"><!---->192.168.1.100</div></td><td colspan="1" rowspan="1" class="el-table_1_column_5 el-table__cell"><div class="cell"><!----><span class="log-level-system">系统级</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_6 el-table__cell"><div class="cell"><!---->品牌商后台基础</div></td><td colspan="1" rowspan="1" class="el-table_1_column_7 el-table__cell"><div class="cell"><!---->产品库</div></td><td colspan="1" rowspan="1" class="el-table_1_column_8 el-table__cell"><div class="cell"><!---->产品库-产品库-产品分类</div></td><td colspan="1" rowspan="1" class="el-table_1_column_9 el-table__cell"><div class="cell"><!----><span>修改分类</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_10 el-table__cell"><div class="cell"><!----><span class="el-tag el-tag--success el-tag--light"><span class="el-tag__content">成功</span><!--v-if--></span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_11 el-table-fixed-column--right is-first-column el-table__cell" style="right: 0px;"><div class="cell"><!----><button aria-disabled="false" type="button" class="el-button el-button--primary el-button--small"><!--v-if--><span class=""> 详情 </span></button></div></td></tr><tr class="el-table__row"><td colspan="1" rowspan="1" class="el-table_1_column_1 el-table__cell"><div class="cell"><!---->2024-01-06 10:30:00</div></td><td colspan="1" rowspan="1" class="el-table_1_column_2 el-table__cell"><div class="cell"><!---->pqrst3456</div></td><td colspan="1" rowspan="1" class="el-table_1_column_3 el-table__cell"><div class="cell"><!----><span>赵六</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_4 el-table__cell"><div class="cell"><!---->192.168.1.103</div></td><td colspan="1" rowspan="1" class="el-table_1_column_5 el-table__cell"><div class="cell"><!----><span class="log-level-system">系统级</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_6 el-table__cell"><div class="cell"><!---->品牌商后台基础</div></td><td colspan="1" rowspan="1" class="el-table_1_column_7 el-table__cell"><div class="cell"><!---->产品库</div></td><td colspan="1" rowspan="1" class="el-table_1_column_8 el-table__cell"><div class="cell"><!---->产品库-产品库-产品分类</div></td><td colspan="1" rowspan="1" class="el-table_1_column_9 el-table__cell"><div class="cell"><!----><span>新增二级分类</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_10 el-table__cell"><div class="cell"><!----><span class="el-tag el-tag--success el-tag--light"><span class="el-tag__content">成功</span><!--v-if--></span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_11 el-table-fixed-column--right is-first-column el-table__cell" style="right: 0px;"><div class="cell"><!----><button aria-disabled="false" type="button" class="el-button el-button--primary el-button--small"><!--v-if--><span class=""> 详情 </span></button></div></td></tr><tr class="el-table__row el-table__row--striped"><td colspan="1" rowspan="1" class="el-table_1_column_1 el-table__cell"><div class="cell"><!---->2024-01-06 09:00:00</div></td><td colspan="1" rowspan="1" class="el-table_1_column_2 el-table__cell"><div class="cell"><!---->klmno9012</div></td><td colspan="1" rowspan="1" class="el-table_1_column_3 el-table__cell"><div class="cell"><!----><span>王五</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_4 el-table__cell"><div class="cell"><!---->192.168.1.102</div></td><td colspan="1" rowspan="1" class="el-table_1_column_5 el-table__cell"><div class="cell"><!----><span class="log-level-system">系统级</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_6 el-table__cell"><div class="cell"><!---->品牌商后台基础</div></td><td colspan="1" rowspan="1" class="el-table_1_column_7 el-table__cell"><div class="cell"><!---->产品库</div></td><td colspan="1" rowspan="1" class="el-table_1_column_8 el-table__cell"><div class="cell"><!---->产品库-产品库-产品分类</div></td><td colspan="1" rowspan="1" class="el-table_1_column_9 el-table__cell"><div class="cell"><!----><span>新增一级分类</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_10 el-table__cell"><div class="cell"><!----><span class="el-tag el-tag--success el-tag--light"><span class="el-tag__content">成功</span><!--v-if--></span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_11 el-table-fixed-column--right is-first-column el-table__cell" style="right: 0px;"><div class="cell"><!----><button aria-disabled="false" type="button" class="el-button el-button--primary el-button--small"><!--v-if--><span class=""> 详情 </span></button></div></td></tr><tr class="el-table__row"><td colspan="1" rowspan="1" class="el-table_1_column_1 el-table__cell"><div class="cell"><!---->2024-01-05 20:00:00</div></td><td colspan="1" rowspan="1" class="el-table_1_column_2 el-table__cell"><div class="cell"><!---->fghij5678</div></td><td colspan="1" rowspan="1" class="el-table_1_column_3 el-table__cell"><div class="cell"><!----><span>李四</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_4 el-table__cell"><div class="cell"><!---->192.168.1.101</div></td><td colspan="1" rowspan="1" class="el-table_1_column_5 el-table__cell"><div class="cell"><!----><span class="log-level-system">系统级</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_6 el-table__cell"><div class="cell"><!---->品牌商后台基础</div></td><td colspan="1" rowspan="1" class="el-table_1_column_7 el-table__cell"><div class="cell"><!---->产品库</div></td><td colspan="1" rowspan="1" class="el-table_1_column_8 el-table__cell"><div class="cell"><!---->产品库-产品库-产品管理</div></td><td colspan="1" rowspan="1" class="el-table_1_column_9 el-table__cell"><div class="cell"><!----><span>彻底删除产品</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_10 el-table__cell"><div class="cell"><!----><span class="el-tag el-tag--success el-tag--light"><span class="el-tag__content">成功</span><!--v-if--></span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_11 el-table-fixed-column--right is-first-column el-table__cell" style="right: 0px;"><div class="cell"><!----><button aria-disabled="false" type="button" class="el-button el-button--primary el-button--small"><!--v-if--><span class=""> 详情 </span></button></div></td></tr><tr class="el-table__row el-table__row--striped"><td colspan="1" rowspan="1" class="el-table_1_column_1 el-table__cell"><div class="cell"><!---->2024-01-05 19:15:10</div></td><td colspan="1" rowspan="1" class="el-table_1_column_2 el-table__cell"><div class="cell"><!---->abcde1234</div></td><td colspan="1" rowspan="1" class="el-table_1_column_3 el-table__cell"><div class="cell"><!----><span>张三</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_4 el-table__cell"><div class="cell"><!---->192.168.1.100</div></td><td colspan="1" rowspan="1" class="el-table_1_column_5 el-table__cell"><div class="cell"><!----><span class="log-level-system">系统级</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_6 el-table__cell"><div class="cell"><!---->品牌商后台基础</div></td><td colspan="1" rowspan="1" class="el-table_1_column_7 el-table__cell"><div class="cell"><!---->产品库</div></td><td colspan="1" rowspan="1" class="el-table_1_column_8 el-table__cell"><div class="cell"><!---->产品库-产品库-产品管理</div></td><td colspan="1" rowspan="1" class="el-table_1_column_9 el-table__cell"><div class="cell"><!----><span>还原产品</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_10 el-table__cell"><div class="cell"><!----><span class="el-tag el-tag--success el-tag--light"><span class="el-tag__content">成功</span><!--v-if--></span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_11 el-table-fixed-column--right is-first-column el-table__cell" style="right: 0px;"><div class="cell"><!----><button aria-disabled="false" type="button" class="el-button el-button--primary el-button--small"><!--v-if--><span class=""> 详情 </span></button></div></td></tr><tr class="el-table__row"><td colspan="1" rowspan="1" class="el-table_1_column_1 el-table__cell"><div class="cell"><!---->2024-01-05 18:30:20</div></td><td colspan="1" rowspan="1" class="el-table_1_column_2 el-table__cell"><div class="cell"><!---->pqrst3456</div></td><td colspan="1" rowspan="1" class="el-table_1_column_3 el-table__cell"><div class="cell"><!----><span>赵六</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_4 el-table__cell"><div class="cell"><!---->192.168.1.103</div></td><td colspan="1" rowspan="1" class="el-table_1_column_5 el-table__cell"><div class="cell"><!----><span class="log-level-system">系统级</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_6 el-table__cell"><div class="cell"><!---->品牌商后台基础</div></td><td colspan="1" rowspan="1" class="el-table_1_column_7 el-table__cell"><div class="cell"><!---->产品库</div></td><td colspan="1" rowspan="1" class="el-table_1_column_8 el-table__cell"><div class="cell"><!---->产品库-产品库-产品管理</div></td><td colspan="1" rowspan="1" class="el-table_1_column_9 el-table__cell"><div class="cell"><!----><span>导出产品</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_10 el-table__cell"><div class="cell"><!----><span class="el-tag el-tag--success el-tag--light"><span class="el-tag__content">成功</span><!--v-if--></span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_11 el-table-fixed-column--right is-first-column el-table__cell" style="right: 0px;"><div class="cell"><!----><button aria-disabled="false" type="button" class="el-button el-button--primary el-button--small"><!--v-if--><span class=""> 详情 </span></button></div></td></tr><tr class="el-table__row el-table__row--striped"><td colspan="1" rowspan="1" class="el-table_1_column_1 el-table__cell"><div class="cell"><!---->2024-01-05 17:00:45</div></td><td colspan="1" rowspan="1" class="el-table_1_column_2 el-table__cell"><div class="cell"><!---->klmno9012</div></td><td colspan="1" rowspan="1" class="el-table_1_column_3 el-table__cell"><div class="cell"><!----><span>王五</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_4 el-table__cell"><div class="cell"><!---->192.168.1.102</div></td><td colspan="1" rowspan="1" class="el-table_1_column_5 el-table__cell"><div class="cell"><!----><span class="log-level-system">系统级</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_6 el-table__cell"><div class="cell"><!---->品牌商后台基础</div></td><td colspan="1" rowspan="1" class="el-table_1_column_7 el-table__cell"><div class="cell"><!---->产品库</div></td><td colspan="1" rowspan="1" class="el-table_1_column_8 el-table__cell"><div class="cell"><!---->产品库-产品库-产品管理</div></td><td colspan="1" rowspan="1" class="el-table_1_column_9 el-table__cell"><div class="cell"><!----><span>批量导入产品</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_10 el-table__cell"><div class="cell"><!----><span class="el-tag el-tag--success el-tag--light"><span class="el-tag__content">成功</span><!--v-if--></span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_11 el-table-fixed-column--right is-first-column el-table__cell" style="right: 0px;"><div class="cell"><!----><button aria-disabled="false" type="button" class="el-button el-button--primary el-button--small"><!--v-if--><span class=""> 详情 </span></button></div></td></tr><tr class="el-table__row"><td colspan="1" rowspan="1" class="el-table_1_column_1 el-table__cell"><div class="cell"><!---->2024-01-05 16:15:30</div></td><td colspan="1" rowspan="1" class="el-table_1_column_2 el-table__cell"><div class="cell"><!---->abcde1234</div></td><td colspan="1" rowspan="1" class="el-table_1_column_3 el-table__cell"><div class="cell"><!----><span>张三</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_4 el-table__cell"><div class="cell"><!---->192.168.1.100</div></td><td colspan="1" rowspan="1" class="el-table_1_column_5 el-table__cell"><div class="cell"><!----><span class="log-level-system">系统级</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_6 el-table__cell"><div class="cell"><!---->品牌商后台基础</div></td><td colspan="1" rowspan="1" class="el-table_1_column_7 el-table__cell"><div class="cell"><!---->产品库</div></td><td colspan="1" rowspan="1" class="el-table_1_column_8 el-table__cell"><div class="cell"><!---->产品库-产品库-产品管理</div></td><td colspan="1" rowspan="1" class="el-table_1_column_9 el-table__cell"><div class="cell"><!----><span>删除产品</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_10 el-table__cell"><div class="cell"><!----><span class="el-tag el-tag--success el-tag--light"><span class="el-tag__content">成功</span><!--v-if--></span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_11 el-table-fixed-column--right is-first-column el-table__cell" style="right: 0px;"><div class="cell"><!----><button aria-disabled="false" type="button" class="el-button el-button--primary el-button--small"><!--v-if--><span class=""> 详情 </span></button></div></td></tr><tr class="el-table__row el-table__row--striped"><td colspan="1" rowspan="1" class="el-table_1_column_1 el-table__cell"><div class="cell"><!---->2024-01-05 15:20:10</div></td><td colspan="1" rowspan="1" class="el-table_1_column_2 el-table__cell"><div class="cell"><!---->fghij5678</div></td><td colspan="1" rowspan="1" class="el-table_1_column_3 el-table__cell"><div class="cell"><!----><span>李四</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_4 el-table__cell"><div class="cell"><!---->192.168.1.101</div></td><td colspan="1" rowspan="1" class="el-table_1_column_5 el-table__cell"><div class="cell"><!----><span class="log-level-system">系统级</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_6 el-table__cell"><div class="cell"><!---->品牌商后台基础</div></td><td colspan="1" rowspan="1" class="el-table_1_column_7 el-table__cell"><div class="cell"><!---->产品库</div></td><td colspan="1" rowspan="1" class="el-table_1_column_8 el-table__cell"><div class="cell"><!---->产品库-产品库-产品管理</div></td><td colspan="1" rowspan="1" class="el-table_1_column_9 el-table__cell"><div class="cell"><!----><span>编辑产品</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_10 el-table__cell"><div class="cell"><!----><span class="el-tag el-tag--success el-tag--light"><span class="el-tag__content">成功</span><!--v-if--></span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_11 el-table-fixed-column--right is-first-column el-table__cell" style="right: 0px;"><div class="cell"><!----><button aria-disabled="false" type="button" class="el-button el-button--primary el-button--small"><!--v-if--><span class=""> 详情 </span></button></div></td></tr><tr class="el-table__row"><td colspan="1" rowspan="1" class="el-table_1_column_1 el-table__cell"><div class="cell"><!---->2024-01-05 14:30:25</div></td><td colspan="1" rowspan="1" class="el-table_1_column_2 el-table__cell"><div class="cell"><!---->abcde1234</div></td><td colspan="1" rowspan="1" class="el-table_1_column_3 el-table__cell"><div class="cell"><!----><span>张三</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_4 el-table__cell"><div class="cell"><!---->192.168.1.100</div></td><td colspan="1" rowspan="1" class="el-table_1_column_5 el-table__cell"><div class="cell"><!----><span class="log-level-system">系统级</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_6 el-table__cell"><div class="cell"><!---->品牌商后台基础</div></td><td colspan="1" rowspan="1" class="el-table_1_column_7 el-table__cell"><div class="cell"><!---->产品库</div></td><td colspan="1" rowspan="1" class="el-table_1_column_8 el-table__cell"><div class="cell"><!---->产品库-产品库-产品管理</div></td><td colspan="1" rowspan="1" class="el-table_1_column_9 el-table__cell"><div class="cell"><!----><span>上传产品</span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_10 el-table__cell"><div class="cell"><!----><span class="el-tag el-tag--success el-tag--light"><span class="el-tag__content">成功</span><!--v-if--></span></div></td><td colspan="1" rowspan="1" class="el-table_1_column_11 el-table-fixed-column--right is-first-column el-table__cell" style="right: 0px;"><div class="cell"><!----><button aria-disabled="false" type="button" class="el-button el-button--primary el-button--small"><!--v-if--><span class=""> 详情 </span></button></div></td></tr></tbody><!--v-if--></table><!--v-if--><!--v-if--></div></div><div class="el-scrollbar__bar is-horizontal" style="display: none;"><div class="el-scrollbar__thumb" style="transform: translateX(0%); width: 517.441px;"></div></div><div class="el-scrollbar__bar is-vertical" style="display: none;"><div class="el-scrollbar__thumb" style="transform: translateY(0%); height: 427.574px;"></div></div></div></div><!--v-if--><div class="el-table__border-left-patch"></div></div><div class="el-table__column-resize-proxy" style="display: none;"></div></div></div><div style="margin-top: 20px; text-align: center;"><div class="el-pagination"><span class="el-pagination__total is-first" disabled="false">Total 17</span><span class="el-pagination__sizes"><div class="el-select"><div class="el-select__wrapper el-tooltip__trigger el-tooltip__trigger" tabindex="-1"><!--v-if--><div class="el-select__selection"><!--v-if--><div class="el-select__selected-item el-select__input-wrapper is-hidden"><input type="text" class="el-select__input" autocomplete="off" tabindex="0" role="combobox" readonly="" spellcheck="false" aria-activedescendant="" aria-controls="el-id-600-30" aria-expanded="false" aria-autocomplete="none" aria-haspopup="listbox" id="el-id-600-47" style="min-width: 11px;"><!--v-if--></div><div class="el-select__selected-item el-select__placeholder"><span>20/page</span></div></div><div class="el-select__suffix"><i class="el-icon el-select__caret el-select__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="M831.872 340.864 512 652.672 192.128 340.864a30.592 30.592 0 0 0-42.752 0 29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728 30.592 30.592 0 0 0-42.752 0z"></path></svg></i><!--v-if--><!--v-if--></div></div><!--teleport start--><!--teleport end--></div></span><button type="button" class="btn-prev" disabled="" aria-label="Go to previous page" aria-disabled="true"><i class="el-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="M609.408 149.376 277.76 489.6a32 32 0 0 0 0 44.672l331.648 340.352a29.12 29.12 0 0 0 41.728 0 30.592 30.592 0 0 0 0-42.752L339.264 511.936l311.872-319.872a30.592 30.592 0 0 0 0-42.688 29.12 29.12 0 0 0-41.728 0z"></path></svg></i></button><ul class="el-pager"><li class="is-active number" aria-current="true" aria-label="page 1" tabindex="0"> 1 </li><!--v-if--><!--v-if--><!--v-if--></ul><button type="button" class="btn-next" disabled="" aria-label="Go to next page" aria-disabled="true"><i class="el-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="M340.864 149.312a30.592 30.592 0 0 0 0 42.752L652.736 512 340.864 831.872a30.592 30.592 0 0 0 0 42.752 29.12 29.12 0 0 0 41.728 0L714.24 534.336a32 32 0 0 0 0-44.672L382.592 149.376a29.12 29.12 0 0 0-41.728 0z"></path></svg></i></button><span class="el-pagination__jump is-last" disabled="false"><span class="el-pagination__goto">Go to</span><div class="el-input el-pagination__editor is-in-pagination"><!-- input --><!-- prepend slot --><!--v-if--><div class="el-input__wrapper" tabindex="-1"><!-- prefix slot --><!--v-if--><input class="el-input__inner" min="1" max="1" type="number" autocomplete="off" tabindex="0" aria-label="Page" id="el-id-600-48"><!-- suffix slot --><!--v-if--></div><!-- append slot --><!--v-if--></div><span class="el-pagination__classifier"></span></span></div></div></div></div></div></div><!-- 操作详情抽屉 --><div class="el-overlay" style="z-index: 2007; display: none;"><div aria-modal="true" aria-label="操作详情" aria-describedby="el-id-600-37" class="el-drawer rtl" role="dialog" style="width: 700px;"><span class="el-drawer__sr-focus" tabindex="-1"></span><header class="el-drawer__header"><span id="el-id-600-36" role="heading" aria-level="2" class="el-drawer__title">操作详情</span><button aria-label="Close this dialog" class="el-drawer__close-btn" type="button"><i class="el-icon el-drawer__close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"></path></svg></i></button></header><!--v-if--><!--v-if--></div></div></div>
+    <div id="app">
+        <div class="app-container">
+            <!-- 顶部用户信息栏 -->
+            <div class="user-info-bar">
+                <div class="user-info-left">
+                    <span class="user-info-item">您好，khcgb2023 ▼</span>
+                </div>
+                <div class="user-info-right">
+                    <span class="user-info-item">商户中心 ▼</span>
+                    <span class="user-info-item">系统设置 ▼</span>
+                    <span class="user-info-item">网站导航 ▼</span>
+                    <span class="user-info-item">📧</span>
+                </div>
+            </div>
+            
+            <!-- 顶部全局导航栏 -->
+            <div class="nav-bg-container">
+                <div class="top-nav">
+                    <div class="nav-left">
+                        <div class="brand-logo">
+                            <img src="https://stati.weixin12315.com/houtai/images/denglu/logoImg.png" alt="米多大数据引擎">
+                            米多大数据引擎
+                        </div>
+                        <nav class="main-nav">
+                            <a href="#" class="main-nav-item">首页</a>
+                            <a href="#" class="main-nav-item">产品库</a>
+                            <a href="#" class="main-nav-item">客户</a>
+                            <a href="#" class="main-nav-item">资产</a>
+                            <a href="#" class="main-nav-item">公众号</a>
+                            <a href="#" class="main-nav-item">订单</a>
+                            <a href="#" class="main-nav-item">应用服务 ▼</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-wrapper">
+        
+        <!-- 主体布局 -->
+        <div class="main-layout">
+            <!-- 左侧菜单导航 -->
+            <div class="sidebar">
+                <div class="menu-item level1">
+                    <i class="el-icon-setting"></i> 系统配置
+                </div>
+                <div class="menu-item level2">
+                    <i class="el-icon-key"></i> 权限/日志
+                </div>
+                <div class="menu-item level3">账号管理</div>
+                <div class="menu-item level3 active">操作日志</div>
+                
+                <div class="menu-item level1 collapsed">
+                    <i class="el-icon-setting"></i> 通用设置
+                    <span class="menu-expand-icon">+</span>
+                </div>
+                
+                <div class="menu-item level1 collapsed">
+                    <i class="el-icon-key"></i> 服务授权
+                    <span class="menu-expand-icon">+</span>
+                </div>
+            </div>
+            
+            <!-- 主内容区域 -->
+            <div class="main-content">
+                <!-- 面包屑导航 -->
+                <div class="breadcrumb">
+                    <el-breadcrumb separator=">">
+                        <el-breadcrumb-item>系统设置</el-breadcrumb-item>
+                        <el-breadcrumb-item>权限/日志</el-breadcrumb-item>
+                        <el-breadcrumb-item>操作日志</el-breadcrumb-item>
+                    </el-breadcrumb>
+            </div>
+
+            <div class="filter-section">
+                <h4 style="margin: 0 0 12px 0; font-size: 16px; font-weight: 600; color: #333;">筛选条件</h4>
+                <div class="filter-grid">
+                    <el-form-item label="操作时间范围">
+                        <el-date-picker
+                            v-model="filters.dateRange"
+                            type="daterange"
+                            range-separator="至"
+                            start-placeholder="开始日期"
+                            end-placeholder="结束日期"
+                            format="YYYY-MM-DD"
+                            value-format="YYYY-MM-DD"
+                            :default-value="defaultDateRange">
+                        </el-date-picker>
+                    </el-form-item>
+                    
+                    <el-form-item label="操作账号">
+                        <el-input
+                            v-model="filters.operatorAccount"
+                            placeholder="输入操作账号"
+                            clearable>
+                        </el-input>
+                    </el-form-item>
+                    
+                    <el-form-item label="操作人">
+                        <el-input
+                            v-model="filters.operator"
+                            placeholder="输入操作人姓名"
+                            clearable>
+                        </el-input>
+                    </el-form-item>
+                    
+                    <el-form-item label="操作人IP">
+                        <el-input
+                            v-model="filters.operatorIP"
+                            placeholder="输入IP地址"
+                            clearable>
+                        </el-input>
+                    </el-form-item>
+                    
+                    <el-form-item label="日志层级">
+                        <el-select
+                            v-model="filters.logLevel"
+                            placeholder="选择日志层级"
+                            clearable
+                            @change="handleLogLevelChange">
+                            <el-option label="全部" value=""></el-option>
+                            <el-option label="系统级" value="系统级"></el-option>
+                            <el-option label="应用级" value="应用级"></el-option>
+                        </el-select>
+                    </el-form-item>
+                    
+                    <el-form-item label="所属应用">
+                        <el-select
+                            v-model="filters.application"
+                            placeholder="选择所属应用"
+                            clearable
+                            @change="handleApplicationChange">
+                            <el-option label="全部" value=""></el-option>
+                            <el-option 
+                                v-for="app in availableApplications" 
+                                :key="app" 
+                                :label="app" 
+                                :value="app">
+                            </el-option>
+                        </el-select>
+                    </el-form-item>
+                    
+                    <el-form-item label="操作模块">
+                        <el-select
+                            v-model="filters.module"
+                            placeholder="选择操作模块"
+                            clearable>
+                            <el-option label="全部" value=""></el-option>
+                            <el-option 
+                                v-for="module in availableModules" 
+                                :key="module" 
+                                :label="module" 
+                                :value="module">
+                            </el-option>
+                        </el-select>
+                    </el-form-item>
+                    
+                    <el-form-item label="操作项">
+                        <el-input
+                            v-model="filters.operationItem"
+                            placeholder="输入操作项关键词"
+                            clearable>
+                        </el-input>
+                    </el-form-item>
+                    
+                    <el-form-item label="操作详情">
+                        <el-input
+                            v-model="filters.operationDetails"
+                            placeholder="输入操作详情关键词"
+                            clearable>
+                        </el-input>
+                    </el-form-item>
+                    
+                    <el-form-item label="执行结果">
+                        <el-select
+                            v-model="filters.result"
+                            placeholder="选择执行结果"
+                            clearable>
+                            <el-option label="全部" value=""></el-option>
+                            <el-option label="成功" value="成功"></el-option>
+                            <el-option label="失败" value="失败"></el-option>
+                        </el-select>
+                    </el-form-item>
+                </div>
+                
+                <div class="btn-group">
+                    <el-button type="primary" @click="searchLogs" :icon="Search">搜索</el-button>
+                    <el-button @click="resetFilters" :icon="Refresh">重置</el-button>
+                </div>
+            </div>
+
+            <div class="logs-section">
+                <h4 style="margin: 0 0 12px 0; font-size: 16px; font-weight: 600; color: #333;">操作日志列表</h4>
+                <div class="table-container" style="overflow-x: auto;">
+                <el-table
+                    :data="displayedLogs"
+                    style="width: 100%"
+                    :default-sort="{prop: 'time', order: 'descending'}"
+                    stripe
+                    border
+                    max-height="600">
+                    <el-table-column prop="time" label="操作时间" sortable width="180"></el-table-column>
+                    <el-table-column prop="operatorAccount" label="操作账号" width="120"></el-table-column>
+                    <el-table-column prop="operator" label="操作人" width="120">
+                        <template #default="scope">
+                            <span v-html="highlightSearch(scope.row.operator)"></span>
+                        </template>
+                    </el-table-column>
+                    <el-table-column prop="operatorIP" label="操作人IP" width="130"></el-table-column>
+                    <el-table-column prop="logLevel" label="日志层级" width="100">
+                        <template #default="scope">
+                            <span :class="scope.row.logLevel === '系统级' ? 'log-level-system' : 'log-level-app'">
+                                {{ scope.row.logLevel }}
+                            </span>
+                        </template>
+                    </el-table-column>
+                    <el-table-column prop="application" label="所属应用" width="150"></el-table-column>
+                    <el-table-column prop="module" label="操作模块" width="150"></el-table-column>
+                    <el-table-column prop="path" label="具体路径" width="200"></el-table-column>
+                    <el-table-column prop="operationItem" label="操作项" width="150">
+                        <template #default="scope">
+                            <span v-html="highlightSearch(scope.row.operationItem)"></span>
+                        </template>
+                    </el-table-column>
+                    <el-table-column prop="result" label="执行状态" width="100">
+                        <template #default="scope">
+                            <el-tag :type="scope.row.result === '成功' ? 'success' : 'danger'">
+                                {{ scope.row.result }}
+                            </el-tag>
+                        </template>
+                    </el-table-column>
+                    <el-table-column label="操作" width="100" fixed="right">
+                        <template #default="scope">
+                            <el-button
+                                size="small"
+                                type="primary"
+                                @click="showDetail(scope.row)">
+                                详情
+                            </el-button>
+                        </template>
+                    </el-table-column>
+                </el-table>
+                </div>
+                
+                <div style="margin-top: 20px; text-align: center;">
+                    <el-pagination
+                        v-model:current-page="currentPage"
+                        v-model:page-size="pageSize"
+                        :page-sizes="[10, 20, 50, 100]"
+                        :total="displayedLogs.length"
+                        layout="total, sizes, prev, pager, next, jumper"
+                        @size-change="handleSizeChange"
+                        @current-change="handleCurrentChange">
+                    </el-pagination>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 操作详情抽屉 -->
+        <el-drawer
+            v-model="drawerVisible"
+            title="操作详情"
+            direction="rtl"
+            size="700px">
+            <div class="drawer-content">
+                <div class="detail-section">
+                    <h4>基本信息</h4>
+                    <div class="detail-item">
+                        <span class="detail-label">操作ID:</span>
+                        <span class="detail-value">{{ currentLog.id }}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">操作时间:</span>
+                        <span class="detail-value">{{ currentLog.time }}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">操作账号:</span>
+                        <span class="detail-value">{{ currentLog.operatorAccount }}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">操作人:</span>
+                        <span class="detail-value">{{ currentLog.operator }}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">操作人IP:</span>
+                        <span class="detail-value">{{ currentLog.operatorIP }}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">日志层级:</span>
+                        <span class="detail-value">
+                            <span :class="currentLog.logLevel === '系统级' ? 'log-level-system' : 'log-level-app'">
+                                {{ currentLog.logLevel }}
+                            </span>
+                        </span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">所属应用:</span>
+                        <span class="detail-value">{{ currentLog.application }}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">操作模块:</span>
+                        <span class="detail-value">{{ currentLog.module }}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">具体路径:</span>
+                        <span class="detail-value">{{ currentLog.path }}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">操作项:</span>
+                        <span class="detail-value">{{ currentLog.operationItem }}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">执行状态:</span>
+                        <span class="detail-value">
+                            <el-tag :type="currentLog.result === '成功' ? 'success' : 'danger'">
+                                {{ currentLog.result }}
+                            </el-tag>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="detail-section">
+                    <h4>操作详情</h4>
+                    <div v-if="currentLog.details">
+                        <!-- 新增类操作详情 -->
+                        <div v-if="currentLog.operationItem.includes('新增') || currentLog.operationItem.includes('上传')" class="detail-item">
+                            <span class="detail-label">{{ currentLog.operationItem }}详情:</span>
+                            <div class="detail-value">
+                                <div v-for="(value, key) in currentLog.details" :key="key" v-if="key !== 'operationId'">
+                                    <span v-html="highlightDetail(getFieldLabel(key))"></span>: <span v-html="highlightDetail(value)"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 修改类操作详情 -->
+                        <div v-else-if="currentLog.operationItem.includes('修改') || currentLog.operationItem.includes('编辑')" class="detail-item">
+                            <span class="detail-label">{{ currentLog.operationItem }}详情:</span>
+                            <div class="detail-value">
+                                <div v-for="change in currentLog.details.changes" :key="change.field" class="change-item">
+                                    <span class="change-before"><span v-html="highlightDetail(getFieldLabel(change.field))"></span>: <span v-html="highlightDetail(change.before)"></span></span>
+                                    <span> → </span>
+                                    <span class="change-after"><span v-html="highlightDetail(change.after)"></span></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 删除类操作详情 -->
+                        <div v-else-if="currentLog.operationItem.includes('删除')" class="detail-item">
+                            <span class="detail-label">{{ currentLog.operationItem }}详情:</span>
+                            <div class="detail-value">
+                                <div v-for="(value, key) in getDeletedInfo(currentLog.details)" :key="key">
+                                    <span v-html="highlightDetail(getFieldLabel(key))"></span>: <span v-html="highlightDetail(value)"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 导入类操作详情 -->
+                        <div v-else-if="currentLog.operationItem.includes('导入')" class="detail-item">
+                            <span class="detail-label">{{ currentLog.operationItem }}详情:</span>
+                            <div class="detail-value">
+                                <div class="detail-item">
+                                    <span class="detail-label">导入文件:</span>
+                                    <span class="detail-value">
+                                        <el-link :href="currentLog.details.importFile" target="_blank" type="primary">
+                                            {{ currentLog.details.importFile }}
+                                        </el-link>
+                                    </span>
+                                </div>
+                                <div v-if="currentLog.details.importedCount" class="detail-item">
+                                    <span class="detail-label">导入数量:</span>
+                                    <span class="detail-value">{{ currentLog.details.importedCount }}</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 导出类操作详情 -->
+                        <div v-else-if="currentLog.operationItem.includes('导出')" class="detail-item">
+                            <span class="detail-label">{{ currentLog.operationItem }}详情:</span>
+                            <div class="detail-value">
+                                <div class="detail-item">
+                                    <span class="detail-label">导出文件:</span>
+                                    <span class="detail-value">
+                                        <el-link :href="currentLog.details.exportFile" target="_blank" type="primary">
+                                            {{ currentLog.details.exportFile }}
+                                        </el-link>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 还原类操作详情 -->
+                        <div v-else-if="currentLog.operationItem.includes('还原')" class="detail-item">
+                            <span class="detail-label">{{ currentLog.operationItem }}详情:</span>
+                            <div class="detail-value">
+                                <div class="detail-item">
+                                    <span class="detail-label">操作ID:</span>
+                                    <span class="detail-value">{{ currentLog.details.operationId }}</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">说明:</span>
+                                    <span class="detail-value">可通过删除日志查看详情，避免累赘</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 彻底删除类操作详情 -->
+                        <div v-else-if="currentLog.operationItem.includes('彻底删除')" class="detail-item">
+                            <span class="detail-label">{{ currentLog.operationItem }}详情:</span>
+                            <div class="detail-value">
+                                <div class="detail-item">
+                                    <span class="detail-label">操作ID:</span>
+                                    <span class="detail-value">{{ currentLog.details.operationId }}</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">说明:</span>
+                                    <span class="detail-value">可通过删除日志查看详情，避免累赘</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 默认情况 -->
+                        <div v-else class="detail-item">
+                            <span class="detail-label">{{ currentLog.operationItem }}详情:</span>
+                            <div class="detail-value">
+                                <div v-for="(value, key) in currentLog.details" :key="key" v-if="key !== 'operationId'">
+                                    <span v-html="highlightDetail(getFieldLabel(key))"></span>: <span v-html="highlightDetail(value)"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </el-drawer>
+    </div>
+
+    <script>
+        const { createApp, ref, computed, onMounted } = Vue;
+        const { Search, Refresh } = ElementPlusIconsVue;
+
+        createApp({
+            setup() {
+                const mockLogs = ref([
+                    // 产品库-产品管理
+                    {
+                        id: "275256",
+                        time: "2024-01-05 14:30:25",
+                        operatorAccount: "abcde1234",
+                        operator: "张三",
+                        operatorIP: "192.168.1.100",
+                        logLevel: "系统级",
+                        application: "品牌商后台基础",
+                        module: "产品库",
+                        path: "产品库-产品库-产品管理",
+                        operationItem: "上传产品",
+                        result: "成功",
+                        details: {
+                            operationId: "275256",
+                            productId: "P001",
+                            productName: "百威啤酒",
+                            productType: "实物商品",
+                            price: "15.00",
+                            stock: "1000",
+                            brand: "百威",
+                            category: "啤酒"
+                        }
+                    },
+                    {
+                        id: "277649",
+                        time: "2024-01-05 15:20:10",
+                        operatorAccount: "fghij5678",
+                        operator: "李四",
+                        operatorIP: "192.168.1.101",
+                        logLevel: "系统级",
+                        application: "品牌商后台基础",
+                        module: "产品库",
+                        path: "产品库-产品库-产品管理",
+                        operationItem: "编辑产品",
+                        result: "成功",
+                        details: {
+                            operationId: "277649",
+                            changes: [
+                                { field: "价格", before: "118", after: "128" },
+                                { field: "总库存", before: "100", after: "500" }
+                            ]
+                        }
+                    },
+                    {
+                        id: "277650",
+                        time: "2024-01-05 16:15:30",
+                        operatorAccount: "abcde1234",
+                        operator: "张三",
+                        operatorIP: "192.168.1.100",
+                        logLevel: "系统级",
+                        application: "品牌商后台基础",
+                        module: "产品库",
+                        path: "产品库-产品库-产品管理",
+                        operationItem: "删除产品",
+                        result: "成功",
+                        details: {
+                            operationId: "277650",
+                            deletedProduct: {
+                                productName: "过期产品",
+                                productType: "实物商品",
+                                price: "50.00",
+                                brand: "过期品牌",
+                                category: "过期分类"
+                            }
+                        }
+                    },
+                    {
+                        id: "277651",
+                        time: "2024-01-05 17:00:45",
+                        operatorAccount: "klmno9012",
+                        operator: "王五",
+                        operatorIP: "192.168.1.102",
+                        logLevel: "系统级",
+                        application: "品牌商后台基础",
+                        module: "产品库",
+                        path: "产品库-产品库-产品管理",
+                        operationItem: "批量导入产品",
+                        result: "成功",
+                        details: {
+                            operationId: "277651",
+                            importFile: "https://example.com/files/products_20240105.xlsx",
+                            importedCount: "150"
+                        }
+                    },
+                    {
+                        id: "277652",
+                        time: "2024-01-05 18:30:20",
+                        operatorAccount: "pqrst3456",
+                        operator: "赵六",
+                        operatorIP: "192.168.1.103",
+                        logLevel: "系统级",
+                        application: "品牌商后台基础",
+                        module: "产品库",
+                        path: "产品库-产品库-产品管理",
+                        operationItem: "导出产品",
+                        result: "成功",
+                        details: {
+                            operationId: "277652",
+                            exportFile: "https://example.com/files/products_export_20240105.xlsx"
+                        }
+                    },
+                    {
+                        id: "277653",
+                        time: "2024-01-05 19:15:10",
+                        operatorAccount: "abcde1234",
+                        operator: "张三",
+                        operatorIP: "192.168.1.100",
+                        logLevel: "系统级",
+                        application: "品牌商后台基础",
+                        module: "产品库",
+                        path: "产品库-产品库-产品管理",
+                        operationItem: "还原产品",
+                        result: "成功",
+                        details: {
+                            operationId: "277653"
+                        }
+                    },
+                    {
+                        id: "277654",
+                        time: "2024-01-05 20:00:00",
+                        operatorAccount: "fghij5678",
+                        operator: "李四",
+                        operatorIP: "192.168.1.101",
+                        logLevel: "系统级",
+                        application: "品牌商后台基础",
+                        module: "产品库",
+                        path: "产品库-产品库-产品管理",
+                        operationItem: "彻底删除产品",
+                        result: "成功",
+                        details: {
+                            operationId: "277654"
+                        }
+                    },
+                    
+                    // 产品库-产品分类
+                    {
+                        id: "277655",
+                        time: "2024-01-06 09:00:00",
+                        operatorAccount: "klmno9012",
+                        operator: "王五",
+                        operatorIP: "192.168.1.102",
+                        logLevel: "系统级",
+                        application: "品牌商后台基础",
+                        module: "产品库",
+                        path: "产品库-产品库-产品分类",
+                        operationItem: "新增一级分类",
+                        result: "成功",
+                        details: {
+                            operationId: "277655",
+                            productId: "C001",
+                            categoryName: "酒类",
+                            categoryLevel: "一级分类"
+                        }
+                    },
+                    {
+                        id: "277656",
+                        time: "2024-01-06 10:30:00",
+                        operatorAccount: "pqrst3456",
+                        operator: "赵六",
+                        operatorIP: "192.168.1.103",
+                        logLevel: "系统级",
+                        application: "品牌商后台基础",
+                        module: "产品库",
+                        path: "产品库-产品库-产品分类",
+                        operationItem: "新增二级分类",
+                        result: "成功",
+                        details: {
+                            operationId: "277656",
+                            categoryName: "白酒",
+                            parentCategory: "酒类",
+                            categoryLevel: "二级分类"
+                        }
+                    },
+                    {
+                        id: "277657",
+                        time: "2024-01-06 11:15:00",
+                        operatorAccount: "abcde1234",
+                        operator: "张三",
+                        operatorIP: "192.168.1.100",
+                        logLevel: "系统级",
+                        application: "品牌商后台基础",
+                        module: "产品库",
+                        path: "产品库-产品库-产品分类",
+                        operationItem: "修改分类",
+                        result: "成功",
+                        details: {
+                            operationId: "277657",
+                            changes: [
+                                { field: "分类名称", before: "白酒", after: "酒" }
+                            ]
+                        }
+                    },
+                    {
+                        id: "277658",
+                        time: "2024-01-06 14:20:00",
+                        operatorAccount: "fghij5678",
+                        operator: "李四",
+                        operatorIP: "192.168.1.101",
+                        logLevel: "系统级",
+                        application: "品牌商后台基础",
+                        module: "产品库",
+                        path: "产品库-产品库-产品分类",
+                        operationItem: "删除分类",
+                        result: "成功",
+                        details: {
+                            operationId: "277658",
+                            deletedCategory: {
+                                categoryName: "白酒",
+                                parentCategory: "酒类",
+                                categoryLevel: "二级分类"
+                            }
+                        }
+                    },
+                    
+                    // 产品库-礼品库-自有礼品
+                    {
+                        id: "277659",
+                        time: "2024-01-06 15:45:00",
+                        operatorAccount: "klmno9012",
+                        operator: "王五",
+                        operatorIP: "192.168.1.102",
+                        logLevel: "系统级",
+                        application: "品牌商后台基础",
+                        module: "产品库",
+                        path: "产品库-礼品库-自有礼品",
+                        operationItem: "上传礼品",
+                        result: "成功",
+                        details: {
+                            operationId: "277659",
+                            giftName: "百威礼品",
+                            giftType: "实物礼品",
+                            marketValue: "100元",
+                            exchangeMethod: "免费兑换",
+                            brand: "百威"
+                        }
+                    },
+                    {
+                        id: "277660",
+                        time: "2024-01-06 16:30:00",
+                        operatorAccount: "pqrst3456",
+                        operator: "赵六",
+                        operatorIP: "192.168.1.103",
+                        logLevel: "系统级",
+                        application: "品牌商后台基础",
+                        module: "产品库",
+                        path: "产品库-礼品库-自有礼品",
+                        operationItem: "编辑礼品",
+                        result: "成功",
+                        details: {
+                            operationId: "277660",
+                            changes: [
+                                { field: "礼品名称", before: "百威礼品", after: "巧克力礼品" },
+                                { field: "市面价值", before: "100元", after: "200元" }
+                            ]
+                        }
+                    },
+                    {
+                        id: "277661",
+                        time: "2024-01-06 17:15:00",
+                        operatorAccount: "abcde1234",
+                        operator: "张三",
+                        operatorIP: "192.168.1.100",
+                        logLevel: "系统级",
+                        application: "品牌商后台基础",
+                        module: "产品库",
+                        path: "产品库-礼品库-自有礼品",
+                        operationItem: "删除礼品",
+                        result: "成功",
+                        details: {
+                            operationId: "277661",
+                            deletedGift: {
+                                giftName: "百威礼品",
+                                giftType: "实物礼品",
+                                marketValue: "100元",
+                                exchangeMethod: "免费兑换",
+                                brand: "百威"
+                            }
+                        }
+                    },
+                    {
+                        id: "277662",
+                        time: "2024-01-06 18:00:00",
+                        operatorAccount: "fghij5678",
+                        operator: "李四",
+                        operatorIP: "192.168.1.101",
+                        logLevel: "系统级",
+                        application: "品牌商后台基础",
+                        module: "产品库",
+                        path: "产品库-礼品库-自有礼品",
+                        operationItem: "导出礼品",
+                        result: "成功",
+                        details: {
+                            operationId: "277662",
+                            exportFile: "https://example.com/files/gifts_export_20240106.xlsx"
+                        }
+                    },
+                    
+                    // 产品库-礼品库-分组管理
+                    {
+                        id: "277663",
+                        time: "2024-01-07 09:30:00",
+                        operatorAccount: "klmno9012",
+                        operator: "王五",
+                        operatorIP: "192.168.1.102",
+                        logLevel: "系统级",
+                        application: "品牌商后台基础",
+                        module: "产品库",
+                        path: "产品库-礼品库-分组管理",
+                        operationItem: "编辑分组",
+                        result: "成功",
+                        details: {
+                            operationId: "277663",
+                            changes: [
+                                { field: "分组名称", before: "集齐换礼", after: "集齐有礼" }
+                            ]
+                        }
+                    },
+                    {
+                        id: "277664",
+                        time: "2024-01-07 10:15:00",
+                        operatorAccount: "pqrst3456",
+                        operator: "赵六",
+                        operatorIP: "192.168.1.103",
+                        logLevel: "系统级",
+                        application: "品牌商后台基础",
+                        module: "产品库",
+                        path: "产品库-礼品库-分组管理",
+                        operationItem: "删除分组",
+                        result: "成功",
+                        details: {
+                            operationId: "277664",
+                            deletedGroup: {
+                                groupName: "集齐有礼",
+                                groupType: "礼品分组",
+                                memberCount: "50"
+                            }
+                        }
+                    }
+                ]);
+
+                const filters = ref({
+                    dateRange: [],
+                    operatorAccount: '',
+                    operator: '',
+                    operatorIP: '',
+                    logLevel: '',
+                    application: '',
+                    module: '',
+                    operationItem: '',
+                    result: '',
+                    operationDetails: ''
+                });
+
+                const currentPage = ref(1);
+                const pageSize = ref(20);
+                const drawerVisible = ref(false);
+                const currentLog = ref({});
+                const displayedLogs = ref([]); // 新增：用于存储筛选后显示的日志
+
+                const defaultDateRange = [
+                    new Date('2024-01-01'),
+                    new Date('2024-01-07')
+                ];
+
+                // 应用和模块的联动数据
+                const applicationModuleMap = {
+                    "品牌商后台基础": ["产品库", "客户管理", "营销管理", "系统设置"],
+                    "微商城": ["商品管理", "订单管理", "用户管理"],
+                    "小程序": ["活动管理", "积分管理", "礼品兑换"]
+                };
+
+                const availableApplications = computed(() => {
+                    if (filters.value.logLevel === '系统级') {
+                        return ["品牌商后台基础"];
+                    } else if (filters.value.logLevel === '应用级') {
+                        return ["微商城", "小程序"];
+                    } else {
+                        return Object.keys(applicationModuleMap);
+                    }
+                });
+
+                const availableModules = computed(() => {
+                    if (filters.value.application && applicationModuleMap[filters.value.application]) {
+                        return applicationModuleMap[filters.value.application];
+                    }
+                    return [];
+                });
 
 
-</div><div id="el-popper-container-600"><div class="el-popper is-pure is-light el-tooltip el-picker__popper" tabindex="-1" aria-hidden="true" role="dialog" aria-modal="false" id="el-id-600-1" data-popper-reference-hidden="false" data-popper-escaped="false" data-popper-placement="bottom" style="z-index: 2001; position: absolute; inset: 262px auto auto 546px; display: none;"><div class="el-picker-panel el-date-range-picker" actualvisible="false" format="YYYY-MM-DD" defaultvalue="Mon Jan 01 2024 08:00:00 GMT+0800 (中国标准时间),Sun Jan 07 2024 08:00:00 GMT+0800 (中国标准时间)"><div class="el-picker-panel__body-wrapper"><!--v-if--><div class="el-picker-panel__body"><!--v-if--><div class="el-picker-panel__content el-date-range-picker__content is-left"><div class="el-date-range-picker__header"><button type="button" class="el-picker-panel__icon-btn d-arrow-left" aria-label="Previous Year"><i class="el-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="M529.408 149.376a29.12 29.12 0 0 1 41.728 0 30.592 30.592 0 0 1 0 42.688L259.264 511.936l311.872 319.936a30.592 30.592 0 0 1-.512 43.264 29.12 29.12 0 0 1-41.216-.512L197.76 534.272a32 32 0 0 1 0-44.672l331.648-340.224zm256 0a29.12 29.12 0 0 1 41.728 0 30.592 30.592 0 0 1 0 42.688L515.264 511.936l311.872 319.936a30.592 30.592 0 0 1-.512 43.264 29.12 29.12 0 0 1-41.216-.512L453.76 534.272a32 32 0 0 1 0-44.672l331.648-340.224z"></path></svg></i></button><button type="button" class="el-picker-panel__icon-btn arrow-left" aria-label="Previous Month"><i class="el-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="M609.408 149.376 277.76 489.6a32 32 0 0 0 0 44.672l331.648 340.352a29.12 29.12 0 0 0 41.728 0 30.592 30.592 0 0 0 0-42.752L339.264 511.936l311.872-319.872a30.592 30.592 0 0 0 0-42.688 29.12 29.12 0 0 0-41.728 0z"></path></svg></i></button><!--v-if--><!--v-if--><div><span role="button" class="el-date-range-picker__header-label" aria-live="polite" tabindex="0">2024 </span><span role="button" aria-live="polite" tabindex="0" class="el-date-range-picker__header-label">January</span></div></div><table aria-label="Use the arrow keys and enter to select the day of the month" class="el-date-table" cellspacing="0" cellpadding="0" role="grid"><tbody><tr><!--v-if--><th aria-label="Sunday" scope="col">Sun</th><th aria-label="Monday" scope="col">Mon</th><th aria-label="Tuesday" scope="col">Tue</th><th aria-label="Wednesday" scope="col">Wed</th><th aria-label="Thursday" scope="col">Thu</th><th aria-label="Friday" scope="col">Fri</th><th aria-label="Saturday" scope="col">Sat</th></tr><tr class="el-date-table__row"><td class="prev-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">31</span></div></td><td class="available" aria-selected="false" tabindex="0"><div class="el-date-table-cell"><span class="el-date-table-cell__text">1</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">2</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">3</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">4</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">5</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">6</span></div></td></tr><tr class="el-date-table__row"><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">7</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">8</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">9</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">10</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">11</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">12</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">13</span></div></td></tr><tr class="el-date-table__row"><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">14</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">15</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">16</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">17</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">18</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">19</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">20</span></div></td></tr><tr class="el-date-table__row"><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">21</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">22</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">23</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">24</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">25</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">26</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">27</span></div></td></tr><tr class="el-date-table__row"><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">28</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">29</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">30</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">31</span></div></td><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">1</span></div></td><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">2</span></div></td><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">3</span></div></td></tr><tr class="el-date-table__row"><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">4</span></div></td><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">5</span></div></td><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">6</span></div></td><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">7</span></div></td><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">8</span></div></td><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">9</span></div></td><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">10</span></div></td></tr></tbody></table><!--v-if--><!--v-if--></div><div class="el-picker-panel__content el-date-range-picker__content is-right"><div class="el-date-range-picker__header"><!--v-if--><!--v-if--><button type="button" aria-label="Next Year" class="el-picker-panel__icon-btn d-arrow-right"><i class="el-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="M452.864 149.312a29.12 29.12 0 0 1 41.728.064L826.24 489.664a32 32 0 0 1 0 44.672L494.592 874.624a29.12 29.12 0 0 1-41.728 0 30.592 30.592 0 0 1 0-42.752L764.736 512 452.864 192a30.592 30.592 0 0 1 0-42.688m-256 0a29.12 29.12 0 0 1 41.728.064L570.24 489.664a32 32 0 0 1 0 44.672L238.592 874.624a29.12 29.12 0 0 1-41.728 0 30.592 30.592 0 0 1 0-42.752L508.736 512 196.864 192a30.592 30.592 0 0 1 0-42.688z"></path></svg></i></button><button type="button" class="el-picker-panel__icon-btn arrow-right" aria-label="Next Month"><i class="el-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="M340.864 149.312a30.592 30.592 0 0 0 0 42.752L652.736 512 340.864 831.872a30.592 30.592 0 0 0 0 42.752 29.12 29.12 0 0 0 41.728 0L714.24 534.336a32 32 0 0 0 0-44.672L382.592 149.376a29.12 29.12 0 0 0-41.728 0z"></path></svg></i></button><div><span role="button" class="el-date-range-picker__header-label" aria-live="polite" tabindex="0">2024 </span><span role="button" aria-live="polite" tabindex="0" class="el-date-range-picker__header-label">February</span></div></div><table aria-label="Use the arrow keys and enter to select the day of the month" class="el-date-table" cellspacing="0" cellpadding="0" role="grid"><tbody><tr><!--v-if--><th aria-label="Sunday" scope="col">Sun</th><th aria-label="Monday" scope="col">Mon</th><th aria-label="Tuesday" scope="col">Tue</th><th aria-label="Wednesday" scope="col">Wed</th><th aria-label="Thursday" scope="col">Thu</th><th aria-label="Friday" scope="col">Fri</th><th aria-label="Saturday" scope="col">Sat</th></tr><tr class="el-date-table__row"><td class="prev-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">28</span></div></td><td class="prev-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">29</span></div></td><td class="prev-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">30</span></div></td><td class="prev-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">31</span></div></td><td class="available" aria-selected="false" tabindex="0"><div class="el-date-table-cell"><span class="el-date-table-cell__text">1</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">2</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">3</span></div></td></tr><tr class="el-date-table__row"><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">4</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">5</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">6</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">7</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">8</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">9</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">10</span></div></td></tr><tr class="el-date-table__row"><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">11</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">12</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">13</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">14</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">15</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">16</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">17</span></div></td></tr><tr class="el-date-table__row"><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">18</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">19</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">20</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">21</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">22</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">23</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">24</span></div></td></tr><tr class="el-date-table__row"><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">25</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">26</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">27</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">28</span></div></td><td class="available" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">29</span></div></td><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">1</span></div></td><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">2</span></div></td></tr><tr class="el-date-table__row"><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">3</span></div></td><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">4</span></div></td><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">5</span></div></td><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">6</span></div></td><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">7</span></div></td><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">8</span></div></td><td class="next-month" aria-selected="false" tabindex="-1"><div class="el-date-table-cell"><span class="el-date-table-cell__text">9</span></div></td></tr></tbody></table><!--v-if--><!--v-if--></div></div></div><!--v-if--></div><span class="el-popper__arrow" data-popper-arrow="" style="position: absolute; left: 5.33333px;"></span></div><div class="el-popper is-pure is-light el-tooltip el-select__popper" tabindex="-1" aria-hidden="true" role="tooltip" id="el-id-600-7" data-popper-reference-hidden="false" data-popper-escaped="false" data-popper-placement="bottom-start" style="z-index: 2002; position: absolute; inset: 510px auto auto 410px; display: none;"><div class="el-select-dropdown" style="min-width: 216px;"><!--v-if--><!--v-if--><div class="el-scrollbar" style=""><div class="el-select-dropdown__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default"><ul id="el-id-600-6" class="el-scrollbar__view el-select-dropdown__list" role="listbox" aria-orientation="vertical" style=""><!--v-if--><li id="el-id-600-8" class="el-select-dropdown__item is-selected" role="option" aria-selected="true"><span>全部</span></li><li id="el-id-600-9" class="el-select-dropdown__item" role="option" aria-selected="false"><span>系统级</span></li><li id="el-id-600-10" class="el-select-dropdown__item" role="option" aria-selected="false"><span>应用级</span></li></ul></div><div class="el-scrollbar__bar is-horizontal" style="display: none;"><div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div></div><div class="el-scrollbar__bar is-vertical" style="display: none;"><div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div></div></div><!--v-if--><!--v-if--><!--v-if--></div><span class="el-popper__arrow" data-popper-arrow="" style="position: absolute; left: 5.33333px;"></span></div><div class="el-popper is-pure is-light el-tooltip el-select__popper" tabindex="-1" aria-hidden="true" role="tooltip" id="el-id-600-13" data-popper-reference-hidden="false" data-popper-escaped="false" data-popper-placement="bottom-start" style="z-index: 2003; position: absolute; inset: 510px auto auto 710px; display: none;"><div class="el-select-dropdown" style="min-width: 216px;"><!--v-if--><!--v-if--><div class="el-scrollbar" style=""><div class="el-select-dropdown__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default"><ul id="el-id-600-12" class="el-scrollbar__view el-select-dropdown__list" role="listbox" aria-orientation="vertical" style=""><!--v-if--><li id="el-id-600-14" class="el-select-dropdown__item is-selected" role="option" aria-selected="true"><span>全部</span></li><li id="el-id-600-15" class="el-select-dropdown__item" role="option" aria-selected="false"><span>品牌商后台基础</span></li><li id="el-id-600-16" class="el-select-dropdown__item" role="option" aria-selected="false"><span>微商城</span></li><li id="el-id-600-17" class="el-select-dropdown__item" role="option" aria-selected="false"><span>小程序</span></li></ul></div><div class="el-scrollbar__bar is-horizontal" style="display: none;"><div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div></div><div class="el-scrollbar__bar is-vertical" style="display: none;"><div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div></div></div><!--v-if--><!--v-if--><!--v-if--></div><span class="el-popper__arrow" data-popper-arrow="" style="position: absolute; left: 5.33333px;"></span></div><div class="el-popper is-pure is-light el-tooltip el-select__popper" tabindex="-1" aria-hidden="true" role="tooltip" id="el-id-600-20" data-popper-reference-hidden="false" data-popper-escaped="false" data-popper-placement="bottom-start" style="z-index: 2004; position: absolute; inset: 558px auto auto 110px; display: none;"><div class="el-select-dropdown" style="min-width: 216px;"><!--v-if--><!--v-if--><div class="el-scrollbar" style=""><div class="el-select-dropdown__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default"><ul id="el-id-600-19" class="el-scrollbar__view el-select-dropdown__list" role="listbox" aria-orientation="vertical" style=""><!--v-if--><li id="el-id-600-21" class="el-select-dropdown__item is-selected" role="option" aria-selected="true"><span>全部</span></li></ul></div><div class="el-scrollbar__bar is-horizontal" style="display: none;"><div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div></div><div class="el-scrollbar__bar is-vertical" style="display: none;"><div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div></div></div><!--v-if--><!--v-if--><!--v-if--></div><span class="el-popper__arrow" data-popper-arrow="" style="position: absolute; left: 5.33333px;"></span></div><div class="el-popper is-pure is-light el-tooltip el-select__popper" tabindex="-1" aria-hidden="true" role="tooltip" id="el-id-600-26" data-popper-reference-hidden="false" data-popper-escaped="false" data-popper-placement="bottom-start" style="z-index: 2005; position: absolute; inset: 606px auto auto 110px; display: none;"><div class="el-select-dropdown" style="min-width: 216px;"><!--v-if--><!--v-if--><div class="el-scrollbar" style=""><div class="el-select-dropdown__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default"><ul id="el-id-600-25" class="el-scrollbar__view el-select-dropdown__list" role="listbox" aria-orientation="vertical" style=""><!--v-if--><li id="el-id-600-27" class="el-select-dropdown__item is-selected" role="option" aria-selected="true"><span>全部</span></li><li id="el-id-600-28" class="el-select-dropdown__item" role="option" aria-selected="false"><span>成功</span></li><li id="el-id-600-29" class="el-select-dropdown__item" role="option" aria-selected="false"><span>失败</span></li></ul></div><div class="el-scrollbar__bar is-horizontal" style="display: none;"><div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div></div><div class="el-scrollbar__bar is-vertical" style="display: none;"><div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div></div></div><!--v-if--><!--v-if--><!--v-if--></div><span class="el-popper__arrow" data-popper-arrow="" style="position: absolute; left: 5.33333px;"></span></div><div class="el-popper is-pure is-light el-tooltip el-select__popper" tabindex="-1" aria-hidden="true" role="tooltip" id="el-id-600-31" data-popper-reference-hidden="false" data-popper-escaped="false" data-popper-placement="bottom-start" style="z-index: 2006; position: absolute; inset: 1094px auto auto 422px; display: none;"><div class="el-select-dropdown" style="min-width: 128px;"><!--v-if--><!--v-if--><div class="el-scrollbar" style=""><div class="el-select-dropdown__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default"><ul id="el-id-600-30" class="el-scrollbar__view el-select-dropdown__list" role="listbox" aria-orientation="vertical" style=""><!--v-if--><li id="el-id-600-32" class="el-select-dropdown__item" role="option" aria-selected="false"><span>10/page</span></li><li id="el-id-600-33" class="el-select-dropdown__item is-selected" role="option" aria-selected="true"><span>20/page</span></li><li id="el-id-600-34" class="el-select-dropdown__item" role="option" aria-selected="false"><span>50/page</span></li><li id="el-id-600-35" class="el-select-dropdown__item" role="option" aria-selected="false"><span>100/page</span></li></ul></div><div class="el-scrollbar__bar is-horizontal" style="display: none;"><div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div></div><div class="el-scrollbar__bar is-vertical" style="display: none;"><div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div></div></div><!--v-if--><!--v-if--><!--v-if--></div><span class="el-popper__arrow" data-popper-arrow="" style="position: absolute; left: 5.33333px;"></span></div></div></body></html>
+
+                const handleLogLevelChange = () => {
+                    filters.value.application = '';
+                    filters.value.module = '';
+                };
+
+                const handleApplicationChange = () => {
+                    filters.value.module = '';
+                };
+
+                const searchLogs = () => {
+                    // 执行筛选逻辑
+                    displayedLogs.value = mockLogs.value.filter(log => {
+                        const logDate = new Date(log.time.split(' ')[0]);
+                        
+                        return (
+                            (!filters.value.dateRange || filters.value.dateRange.length === 0 || 
+                             (logDate >= new Date(filters.value.dateRange[0]) && 
+                              logDate <= new Date(filters.value.dateRange[1]))) &&
+                            (!filters.value.operatorAccount || log.operatorAccount.includes(filters.value.operatorAccount)) &&
+                            (!filters.value.operator || log.operator.includes(filters.value.operator)) &&
+                            (!filters.value.operatorIP || log.operatorIP.includes(filters.value.operatorIP)) &&
+                            (!filters.value.logLevel || log.logLevel === filters.value.logLevel) &&
+                            (!filters.value.application || log.application === filters.value.application) &&
+                            (!filters.value.module || log.module === filters.value.module) &&
+                            (!filters.value.operationItem || log.operationItem.includes(filters.value.operationItem)) &&
+                            (!filters.value.result || log.result === filters.value.result) &&
+                            (!filters.value.operationDetails || JSON.stringify(log.details).includes(filters.value.operationDetails))
+                        );
+                    });
+                    currentPage.value = 1;
+                };
+
+                const resetFilters = () => {
+                    filters.value = {
+                        dateRange: [],
+                        operatorAccount: '',
+                        operator: '',
+                        operatorIP: '',
+                        logLevel: '',
+                        application: '',
+                        module: '',
+                        operationItem: '',
+                        result: '',
+                        operationDetails: ''
+                    };
+                    displayedLogs.value = [...mockLogs.value]; // 重置时显示所有日志
+                    currentPage.value = 1;
+                };
+
+                const showDetail = (log) => {
+                    currentLog.value = log;
+                    drawerVisible.value = true;
+                };
+
+                const handleSizeChange = (val) => {
+                    pageSize.value = val;
+                    currentPage.value = 1;
+                };
+
+                const handleCurrentChange = (val) => {
+                    currentPage.value = val;
+                };
+
+                const highlightSearch = (text) => {
+                    const searchTerm = filters.value.operator || filters.value.operationItem;
+                    if (!searchTerm) return text;
+                    const regex = new RegExp(`(${searchTerm})`, 'gi');
+                    return text.replace(regex, '<span class="search-highlight">$1</span>');
+                };
+
+                const highlightDetail = (text) => {
+                    const searchTerm = filters.value.operationDetails;
+                    if (!searchTerm || typeof text !== 'string') return text;
+                    const regex = new RegExp(searchTerm.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'), 'gi');
+                    return text.replace(regex, '<span class="search-highlight">$&</span>');
+                };
+
+                // 获取字段的中文标签
+                const getFieldLabel = (key) => {
+                    const fieldLabels = {
+                        'productId': '产品ID',
+                        'productName': '产品名称',
+                        'productType': '产品类型',
+                        'price': '价格',
+                        'stock': '库存',
+                        'brand': '品牌',
+                        'category': '分类',
+                        'categoryName': '分类名称',
+                        'categoryLevel': '分类级别',
+                        'parentCategory': '所属一级分类',
+                        'giftName': '礼品名称',
+                        'giftType': '礼品类型',
+                        'marketValue': '市面价值',
+                        'exchangeMethod': '兑换方式',
+                        'groupName': '分组名称',
+                        'groupType': '分组类型',
+                        'memberCount': '成员数量'
+                    };
+                    return fieldLabels[key] || key;
+                };
+
+                // 获取删除信息
+                const getDeletedInfo = (details) => {
+                    if (details.deletedProduct) return details.deletedProduct;
+                    if (details.deletedCategory) return details.deletedCategory;
+                    if (details.deletedGift) return details.deletedGift;
+                    if (details.deletedGroup) return details.deletedGroup;
+                    return {};
+                };
+
+                // 生成操作账号（前5位小写字母+后4位数字）
+                const generateOperatorAccount = () => {
+                    const letters = 'abcdefghijklmnopqrstuvwxyz';
+                    const numbers = '0123456789';
+                    let account = '';
+                    
+                    // 生成前5位小写字母
+                    for (let i = 0; i < 5; i++) {
+                        account += letters[Math.floor(Math.random() * letters.length)];
+                    }
+                    
+                    // 生成后4位数字
+                    for (let i = 0; i < 4; i++) {
+                        account += numbers[Math.floor(Math.random() * numbers.length)];
+                    }
+                    
+                    return account;
+                };
+
+                onMounted(() => {
+                    // 设置默认时间范围
+                    filters.value.dateRange = ['2024-01-01', '2024-01-07'];
+                    // 初始化显示所有日志
+                    displayedLogs.value = [...mockLogs.value];
+                });
+
+                return {
+                    mockLogs,
+                    filters,
+                    currentPage,
+                    pageSize,
+                    drawerVisible,
+                    currentLog,
+                    defaultDateRange,
+                    availableApplications,
+                    availableModules,
+                    displayedLogs,
+                    handleLogLevelChange,
+                    handleApplicationChange,
+                    searchLogs,
+                    resetFilters,
+                    showDetail,
+                    handleSizeChange,
+                    handleCurrentChange,
+                    highlightSearch,
+                    highlightDetail,
+                    getFieldLabel,
+                    getDeletedInfo,
+                    generateOperatorAccount,
+                    Search,
+                    Refresh
+                };
+            }
+        }).use(ElementPlus).mount('#app');
+    </script>
+</body>
+</html>
